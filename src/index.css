@@ -1,0 +1,60 @@
+:root {
+  --card-size: 600px;
+  --text: #d7d7da;
+  --background: #010314;
+  --primary: rgb(143, 179, 255);
+  --secondary: rgb(235, 241, 255);
+  --accent: rgb(212, 29, 109);
+  --accent-heavy: #f08fb9;
+  --background-hue: #343543;
+  --borders: linear-gradient(
+    220deg,
+    var(--accent-heavy),
+    var(--accent),
+    var(--primary),
+    var(--secondary)
+  );
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Space Grotesk", sans-serif; */
+  color: var(--text);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--background);
+  padding: 2rem;
+}
+
+main {
+  height: 100%;
+  padding: 0.5rem;
+  background: var(--borders);
+  border-radius: 15px;
+}
+
+.content-container {
+  height: 100%;
+  width: 100%;
+  border: 5px solid var(--background);
+  border-radius: 15px;
+  padding: 1.4rem 2.6rem;
+  background: var(--background);
+}
+
+.heading-span {
+  display: block;
+}
+
+.main-heading {
+  font-size: 6.5rem;
+  z-index: 1;
+}

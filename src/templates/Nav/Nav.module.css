@@ -1,0 +1,28 @@
+@import "../../index.css";
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItems {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  border-radius: 50px;
+  padding: 10px 0px;
+  border: 1px solid var(--background-hue);
+}
+
+.navItems a {
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.navItems a:hover {
+  background-color: var(--text);
+  color: var(--background);
+}

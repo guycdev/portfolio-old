@@ -1,0 +1,42 @@
+@import "../../index.css";
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 95%;
+  border-radius: 10px;
+}
+
+.container > * {
+  flex: 1;
+}
+
+.wordContainer {
+  max-width: 800px;
+  height: 400px;
+  width: 120%;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wordContainer p {
+  height: 400px;
+  text-align: right;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  z-index: 2;
+  background: var(--borders);
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1rem;
+}
+
+.maskContainer {
+  position: relative;
+  -webkit-mask-size: 60%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  -webkit-mask-position: 50% 50%;
+}
