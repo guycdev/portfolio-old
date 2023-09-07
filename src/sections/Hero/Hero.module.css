@@ -63,6 +63,7 @@
   z-index: 2;
   background: var(--borders);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   line-height: 0.75rem;
   font-size: 0.75rem;
@@ -71,6 +72,7 @@
 .maskContainer {
   position: relative;
   -webkit-mask-size: 60%;
+  mask-size: 60%;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-position: 90% 0%;
