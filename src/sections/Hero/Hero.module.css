@@ -5,6 +5,7 @@
   align-items: center;
   height: 95%;
   border-radius: 10px;
+  position: relative;
 }
 
 .container > * {
@@ -12,12 +13,14 @@
 }
 
 .wordContainer {
-  max-width: 800px;
-  height: 400px;
-  width: 120%;
+  max-width: 600px;
+  height: 200px;
+  width: 100%;
   border-radius: 50px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  transition: all 0.3s;
+  right: 0;
 }
 
 .wordContainer p {
