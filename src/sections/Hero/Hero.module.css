@@ -11,6 +11,12 @@
   flex: 1;
 }
 
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .wordAnimationContainer {
   display: flex;
   flex-direction: column;
@@ -69,4 +75,9 @@
   -webkit-mask-repeat: no-repeat;
   mask-position: 90% 0%;
   -webkit-mask-position: 90% 0%;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 30px;
 }

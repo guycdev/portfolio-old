@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
+import { motion } from "framer-motion";
 
 export default function WordAnimation(props) {
   const { overlayIndex, id, overlay, randomLetters } = props;
@@ -19,9 +20,19 @@ export default function WordAnimation(props) {
         height: isVisible ? "400px" : "0px",
       }}
     >
-      <div className={styles.maskContainer} style={maskStyle}>
+      <motion.div
+        className={styles.maskContainer}
+        style={maskStyle}
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: {
+            delay: 1,
+          },
+        }}
+      >
         <p>{randomLetters}</p>
-      </div>
+      </motion.div>
     </div>
   );
 }

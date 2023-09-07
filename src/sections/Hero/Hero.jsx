@@ -57,7 +57,7 @@ export default function Hero() {
       <HeroCta />
       <div className={styles.wordAnimationContainer}>
         <div>{wordAnimationArr}</div>
-        <WordAnimationMaskSelector overlays={overlays} />
+        {/* <WordAnimationMaskSelector overlays={overlays} /> */}
       </div>
     </section>
   );
