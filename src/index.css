@@ -78,6 +78,7 @@ main {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   color: var(--background);
+  font-size: 1.15rem;
 }
 
 .primary-btn {
