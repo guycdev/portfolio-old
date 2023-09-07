@@ -3,6 +3,7 @@ import HeroCta from "./HeroCta";
 import WordAnimation from "./WordAnimation";
 import styles from "./Hero.module.css";
 import overlays from "../../utilities/overlayArr.js";
+import WordAnimationMaskSelector from "./WordAnimationMaskSelector";
 
 export default function Hero() {
   const [overlayIndex, setOverlayIndex] = useState(0);
@@ -54,7 +55,10 @@ export default function Hero() {
   return (
     <section className={styles.container}>
       <HeroCta />
-      {wordAnimationArr}
+      <div className={styles.wordAnimationContainer}>
+        <div>{wordAnimationArr}</div>
+        <WordAnimationMaskSelector overlays={overlays} />
+      </div>
     </section>
   );
 }
