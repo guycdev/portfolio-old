@@ -34,7 +34,7 @@ export default function HeroCta() {
         Developer
       </motion.h3>
       <p className="subheading">
-        <Heading content="I'm Guy, a computer science and finance student eager to innovate on your engineering team. Data-Driven, Dollar-Smart: Uniting Financial Acumen and Tech Skills to Accelerate Your Business." />
+        <Heading content="I'm Guy, a computer science and finance student eager to innovate on your engineering team. Data-Driven, Dollar-Smart: Uniting Financial Acumen and Tech Skills to provide your team with a big picture perspective." />
       </p>
       <div className={styles.btnContainer}>
         <Button style="primary-btn" text="Get in Touch" id={1} />
