@@ -1,0 +1,36 @@
+@import "../../index.css";
+
+.footerContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerItemContainer {
+  display: flex;
+  gap: 15px;
+  border-radius: 50px;
+  border: 1px solid var(--background-hue);
+  transition: all 0.3s ease-in-out;
+}
+
+.footerItemContainer > a {
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footerItemContainer svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--text);
+  transition: all 0.3s;
+}
+
+.hovered svg {
+  fill: var(--background);
+}
+
+.hovered {
+  background-color: var(--text);
+  box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.4);
+}
