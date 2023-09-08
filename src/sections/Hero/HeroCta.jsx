@@ -9,7 +9,8 @@ export default function HeroCta() {
   return (
     <div className={styles.heroContainer}>
       <h1 className="main-heading">
-        <Heading content="Guy Cohen" />
+        <Heading content="Guy " />
+        <Heading content="Cohen" />
       </h1>
       <motion.h3
         className="typewriter"

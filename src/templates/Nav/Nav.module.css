@@ -8,11 +8,13 @@
 
 .navItems {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 15px;
   border-radius: 50px;
   border: 1px solid var(--background-hue);
   transition: all 0.2s ease-in-out;
+  height: fit-content;
 }
 
 .homeBtn {
@@ -42,14 +44,19 @@
   transition: all 0.3s;
   font-weight: 300;
   padding: 10px 15px;
+  border: 1px solid transparent;
 }
 
-.hovered > a > span {
+.hovered > a > span,
+.active > span {
   background-color: var(--text);
   box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.4);
+  border: 1px solid rgba(235, 241, 255, 0.4);
 }
 
 .hovered > a > span > span,
-.hovered > span > span {
+.hovered > span > span,
+.active > span > span {
   color: var(--background);
+  font-weight: 600;
 }

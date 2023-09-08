@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  height: 100%;
+  gap: 20px;
+}
+
+.container > * {
+  flex: 1;
+}
+
+.miscContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tempDiv {
+  content: " ";
+  height: 300px;
+  width: 100%;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function Heading(props) {
-  const { content } = props;
+  const { content, style } = props;
 
   const letters = content.split("");
 
@@ -29,5 +29,5 @@ export default function Heading(props) {
     );
   });
 
-  return <span className="heading-span">{elementsArr}</span>;
+  return <span className={`heading-span ${style}`}>{elementsArr}</span>;
 }

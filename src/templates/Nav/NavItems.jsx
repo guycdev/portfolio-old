@@ -21,12 +21,17 @@ export default function NavItems(props) {
         onMouseEnter={handleMouseOver}
         onMouseLeave={handleMouseOver}
       >
-        <NavLink to={link}>
+        <NavLink
+          to={link}
+          className={({ isActive }) => (isActive ? styles.active : null)}
+        >
           <Heading content={item} />
         </NavLink>
       </li>
     );
   });
+
+  console.log(menuItems[0].classList);
 
   return (
     <motion.ul

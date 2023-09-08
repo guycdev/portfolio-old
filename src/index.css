@@ -7,6 +7,7 @@
   --background: #010314; */
   --text: #d7e3ff;
   --background: #000a1e;
+  --card-bg: #0c142a;
   --background-hue: #343543;
   --primary: rgb(143, 179, 255);
   --secondary: rgb(235, 241, 255);
@@ -57,7 +58,15 @@ main {
   border-radius: 50%;
   border: 1px solid var(--background-hue);
   padding: 10px;
+  text-decoration: none;
   transition: all 0.3s;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 1rem;
+  height: 100%;
 }
 
 .content-container {
@@ -69,10 +78,7 @@ main {
   background: var(--background);
   display: flex;
   flex-direction: column;
-}
-
-.heading-span {
-  display: block;
+  gap: 20px;
 }
 
 .main-heading {
@@ -139,7 +145,8 @@ main {
   display: inline;
 }
 
-.Typewriter > *:first-child {
+.Typewriter > *:first-child,
+.highlighted > span {
   background: linear-gradient(
     to right,
     var(--accent-heavy),
@@ -149,4 +156,8 @@ main {
   );
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.highlighted {
+  display: inline;
 }
