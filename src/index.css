@@ -79,7 +79,21 @@ main {
   background: var(--background);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
+}
+
+/* .content-container > *:first-child {
+  height: 8%;
+}
+
+
+
+.content-container > *:last-child {
+  height: 8%;
+} */
+.content-container > *:nth-child(2) {
+  height: 83%;
 }
 
 .main-heading {

@@ -116,12 +116,12 @@
 .codeSnippetContainer > div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .codeSnippetContainer pre {
-  max-height: 420px;
+  flex-grow: 1;
   border-radius: 10px;
 }
 
@@ -164,4 +164,20 @@ video {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+
+.linkContainer {
+  display: flex;
+}
+
+.linkContainer > div {
+  display: flex;
+  border-radius: 50px;
+  border: 1px solid var(--background-hue);
+}
+
+.linkContainer > div > a {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.3s;
 }

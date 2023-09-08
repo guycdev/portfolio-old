@@ -5,6 +5,7 @@ import styles from "./AboutMe.module.css";
 import { motion } from "framer-motion";
 import WindowController from "./WindowController";
 import VideoPlayer from "./VideoPlayer";
+import Links from "./Links";
 
 export default function CodeSnippet(props) {
   const { feature, activeFeature } = props;
@@ -32,6 +33,7 @@ export default function CodeSnippet(props) {
         ) : (
           <VideoPlayer videoIndex={activeFeature} video={feature.video} />
         )}
+        <Links linksArr={feature.links} />
       </motion.div>
     </div>
   );

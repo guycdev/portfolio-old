@@ -6,6 +6,10 @@ const featuresArr = [
     description:
       "A minion face whose eyes follow mouse positioning using trigonometry",
     video: minions,
+    links: [
+      "https://github.com/gcWDev/Analog-Designs/blob/main/frontend/src/pages/NewAuth/AuthHeroCard.jsx",
+      "http://ec2-18-215-255-171.compute-1.amazonaws.com/account",
+    ],
     code: `export default function CursorFollower() {
   const [pupilStyle, setPupilStyle] = 
     useState({
@@ -106,6 +110,10 @@ const featuresArr = [
     description:
       "A reusable progress bar component that dynamically fills based on the length of inputs in a form",
     video: minions,
+    links: [
+      "https://github.com/gcWDev/Analog-Designs/blob/main/frontend/src/pages/NewAuth/AuthHeroCard.jsx",
+      "http://ec2-18-215-255-171.compute-1.amazonaws.com/account",
+    ],
     code: `export default function ProgressBar(props) {
       const { formData, formFieldCount } = props;
     
