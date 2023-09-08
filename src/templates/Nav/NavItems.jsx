@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Nav.module.css";
 import { NavLink } from "react-router-dom";
 import Heading from "../../components/Heading";
+import { motion } from "framer-motion";
 
 export default function NavItems(props) {
   const { items } = props;
@@ -27,5 +28,20 @@ export default function NavItems(props) {
     );
   });
 
-  return <ul className={styles.navItems}>{menuItems}</ul>;
+  return (
+    <motion.ul
+      className={styles.navItems}
+      initial={{
+        height: "0px",
+      }}
+      animate={{
+        height: "100%",
+        transition: {
+          delay: 0.3,
+        },
+      }}
+    >
+      {menuItems}
+    </motion.ul>
+  );
 }
