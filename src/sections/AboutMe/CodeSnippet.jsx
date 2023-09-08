@@ -30,7 +30,7 @@ export default function CodeSnippet(props) {
             {feature.code}
           </SyntaxHighlighter>
         ) : (
-          <VideoPlayer videoIndex={activeFeature} />
+          <VideoPlayer videoIndex={activeFeature} video={feature.video} />
         )}
       </motion.div>
     </div>
