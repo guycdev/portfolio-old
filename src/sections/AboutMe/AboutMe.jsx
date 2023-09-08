@@ -111,9 +111,73 @@ export default function AboutMe() {
   }`,
     },
     {
-      name: "Feature 2",
-      description: "This is feature 2",
-      code: `console.log("Hello, World!");`,
+      name: "Dynamic Progress Bar",
+      description:
+        "A reusable progress bar component that dynamically fills based on the length of inputs in a form",
+      code: `export default function ProgressBar(props) {
+      const { formData, formFieldCount } = props;
+    
+      function formProgress() {
+        let count = 0;
+
+        Object.values(formData).forEach((prev)=>{
+          if (Array.isArray(prev)){
+            return isObjectEmpty(prev[0])
+             ? null 
+             : count++;
+          }
+          if (typeof prev == "object"){
+            return isObjectEmpty(prev) 
+            ? null 
+            : count++;
+          }
+          if (prev) {
+            count++;
+          }
+        });
+        return (
+          count 
+          / formFieldCount
+          ) 
+          * 100;
+      }
+    
+      function isObjectEmpty(obj) {
+        for (let key in obj) {
+          //Handle edge case of 
+          start date 
+          having a default value
+          if (
+            obj[key] && key != "start") {
+            return false;
+          }
+        }
+        return true;
+      }
+    
+      const progressBar = 
+      formProgress();
+    
+      return (
+        <div 
+        className=
+        "progress-bar-container"
+        >
+          <div
+            className="progress-bar"
+            style=
+            {
+              {
+                 width: 
+                 "{progressBar}%", 
+                 opacity: 
+                 progressBar > 0 ? 1 : 0 
+                }
+              }
+          ></div>
+        </div>
+      );
+      }`,
     },
   ];
 
