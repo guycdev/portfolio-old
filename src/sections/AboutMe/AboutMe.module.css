@@ -1,3 +1,5 @@
+@import "../../index.css";
+
 .container {
   display: flex;
   height: 100%;
@@ -14,8 +16,87 @@
   gap: 20px;
 }
 
+.miscContainer > *:last-child {
+  flex-grow: 1;
+}
+
 .tempDiv {
   content: " ";
   height: 300px;
   width: 100%;
+}
+
+.blob {
+  transform: scale(0.7) rotate(90deg);
+}
+
+.aboutMeProfileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMeContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.aboutMeFeatureControllerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aboutMeContentContainer > h3,
+.aboutMeFeatureControllerContainer > h3 {
+  font-size: 2rem;
+}
+
+.aboutMeContentContainer > h3 *,
+.aboutMeFeatureControllerContainer > h3 * {
+  color: var(--primary);
+}
+
+.workStatusContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.workStatusContainer * {
+  fill: #58a88c;
+  color: #58a88c;
+  font-size: 0.8rem;
+}
+
+.aboutMeContentContainer > p {
+  font-size: 0.9rem;
+}
+
+.featureItem {
+  transition: all 0.3s;
+}
+
+.featureController > * {
+  padding: 0.75rem 0.5rem;
+}
+
+.featureController * {
+  color: var(--text);
+}
+
+.featureController h4 {
+  font-size: 1.2rem;
+}
+
+.featureController p {
+  font-size: 0.8rem;
+}
+
+.activeFeature {
+  background-color: var(--background);
+  border-radius: 15px;
 }
