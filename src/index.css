@@ -1,12 +1,16 @@
+/* https://realtimecolors.com/?colors=f0d9f2-240d26-cd70a4-351315-c25159 */
+/* https://realtimecolors.com/?colors=d7e3ff-000a1e-8fb3ff-ebf1ff-d41d6d --> */
+
 :root {
   --card-size: 600px;
-  --text: #d7d7da;
-  --background: #010314;
+  /* --text: #d7d7da;
+  --background: #010314; */
+  --text: #d7e3ff;
+  --background: #000a1e;
   --primary: rgb(143, 179, 255);
   --secondary: rgb(235, 241, 255);
   --accent: rgb(212, 29, 109);
   --accent-heavy: #f08fb9;
-  --background-hue: #343543;
   --borders: linear-gradient(
     220deg,
     var(--accent-heavy),
@@ -14,6 +18,13 @@
     var(--primary),
     var(--secondary)
   );
+  /* --accent-heavy: #0c7b42;
+  --background-hue: #343543;
+  --text: #f1fef7;
+  --background: #01130a;
+  --primary: #62f4a8;
+  --secondary: #032b16;
+  --accent: #10ea79; */
 }
 
 * {
