@@ -179,6 +179,80 @@ const featuresArr = [
       );
       }`,
   },
+  {
+    name: "Dynamic Video Player",
+    description:
+      "A video player to showcase my previous work without rerendering the page every time a new video is hovered over.",
+    video: minions,
+    links: [
+      "https://github.com/gcWDev/Analog-Designs/blob/main/frontend/src/pages/NewAuth/AuthHeroCard.jsx",
+      "http://ec2-18-215-255-171.compute-1.amazonaws.com/account",
+    ],
+    code: `export default function ProgressBar(props) {
+      const { formData, formFieldCount } = props;
+    
+      function formProgress() {
+        let count = 0;
+
+        Object.values(formData).forEach((prev)=>{
+          if (Array.isArray(prev)){
+            return isObjectEmpty(prev[0])
+             ? null 
+             : count++;
+          }
+          if (typeof prev == "object"){
+            return isObjectEmpty(prev) 
+            ? null 
+            : count++;
+          }
+          if (prev) {
+            count++;
+          }
+        });
+        return (
+          count 
+          / formFieldCount
+          ) 
+          * 100;
+      }
+    
+      function isObjectEmpty(obj) {
+        for (let key in obj) {
+          //Handle edge case of 
+          start date 
+          having a default value
+          if (
+            obj[key] && key != "start") {
+            return false;
+          }
+        }
+        return true;
+      }
+    
+      const progressBar = 
+      formProgress();
+    
+      return (
+        <div 
+        className=
+        "progress-bar-container"
+        >
+          <div
+            className="progress-bar"
+            style=
+            {
+              {
+                 width: 
+                 "{progressBar}%", 
+                 opacity: 
+                 progressBar > 0 ? 1 : 0 
+                }
+              }
+          ></div>
+        </div>
+      );
+      }`,
+  },
 ];
 
 export default featuresArr;
