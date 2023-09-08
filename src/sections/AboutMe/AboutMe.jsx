@@ -8,14 +8,12 @@ import AboutMeFeatures from "./AboutMeFeatures";
 export default function AboutMe() {
   const [feature, setFeature] = useState(0);
 
-  console.log(feature);
-
   const featuresArr = [
     {
       name: "Minions Cursor Follower",
       description:
         "A minion face whose eyes follow mouse positioning using trigonometry",
-      code: `export default function MinionFollower() {
+      code: `export default function CursorFollower() {
   const [pupilStyle, setPupilStyle] = 
     useState({
     left: "50%",
@@ -192,7 +190,7 @@ export default function AboutMe() {
           activeFeature={feature}
         />
       </div>
-      <CodeSnippet feature={featuresArr[feature]} />
+      <CodeSnippet feature={featuresArr[feature]} activeFeature={feature} />
     </section>
   );
 }

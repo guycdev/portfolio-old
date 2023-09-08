@@ -4,9 +4,10 @@ import { synthwave84 } from "react-syntax-highlighter/dist/esm/styles/prism";
 import styles from "./AboutMe.module.css";
 import { motion } from "framer-motion";
 import WindowController from "./WindowController";
+import VideoPlayer from "./VideoPlayer";
 
 export default function CodeSnippet(props) {
-  const { feature } = props;
+  const { feature, activeFeature } = props;
 
   const [window, setWindow] = useState("code");
 
@@ -29,8 +30,7 @@ export default function CodeSnippet(props) {
             {feature.code}
           </SyntaxHighlighter>
         ) : (
-          // <VideoPlayer />
-          <></>
+          <VideoPlayer videoIndex={activeFeature} />
         )}
       </motion.div>
     </div>
