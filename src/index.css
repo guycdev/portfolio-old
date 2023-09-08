@@ -60,6 +60,8 @@ main {
   border-radius: 15px;
   padding: 1.4rem 2.6rem;
   background: var(--background);
+  display: flex;
+  flex-direction: column;
 }
 
 .heading-span {
