@@ -8,12 +8,14 @@ import {
 import HomeLayout from "./Layouts/HomeLayout";
 import Hero from "./sections/Hero/Hero";
 import AboutMe from "./sections/AboutMe/AboutMe";
+import Projects from "./sections/Projects/Projects";
 
 const route = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<HomeLayout />}>
       <Route index element={<Hero />} />
       <Route path="/about-me" element={<AboutMe />} />
+      <Route path="/projects" element={<Projects />} />
     </Route>
   )
 );

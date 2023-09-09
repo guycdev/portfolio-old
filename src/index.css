@@ -44,7 +44,7 @@
   width: 100vw;
   overflow: hidden;
   background: var(--background);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 main {

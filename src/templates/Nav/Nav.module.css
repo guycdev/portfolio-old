@@ -37,6 +37,7 @@
 .navItems > li > a {
   text-decoration: none;
   font-size: 0.9rem;
+  display: flex;
 }
 
 .navItems > li > a > span {
