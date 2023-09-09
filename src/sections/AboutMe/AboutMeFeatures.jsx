@@ -32,9 +32,14 @@ export default function AboutMeFeatures(props) {
 
   return (
     <div className={`card ${styles.aboutMeFeatureControllerContainer}`}>
-      <h3>
-        <Heading content="Favorite Features" />
-      </h3>
+      <div className={styles.aboutMeFeatureHeadings}>
+        <h3>
+          <Heading content="Favorite Features" />
+        </h3>
+        <p className={styles.subheading}>
+          <Heading content="Scroll to look through some of the UI components I'm most proud of" />
+        </p>
+      </div>
       <div className={styles.featureController}>{featureControllerArr}</div>
     </div>
   );

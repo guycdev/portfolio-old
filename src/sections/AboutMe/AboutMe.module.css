@@ -20,12 +20,6 @@
   flex-grow: 1;
 }
 
-.tempDiv {
-  content: " ";
-  height: 300px;
-  width: 100%;
-}
-
 .blob {
   transform: scale(0.7) rotate(90deg);
 }
@@ -48,15 +42,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 
 .aboutMeContentContainer > h3,
-.aboutMeFeatureControllerContainer > h3 {
+.aboutMeFeatureControllerContainer > div > h3 {
   font-size: 2rem;
 }
 
 .aboutMeContentContainer > h3 *,
-.aboutMeFeatureControllerContainer > h3 * {
+.aboutMeFeatureControllerContainer > div > h3 * {
   color: var(--primary);
 }
 
@@ -76,11 +71,13 @@
   font-size: 0.9rem;
 }
 
+.feature,
+.activeFeature {
+  cursor: pointer;
+}
+
 .featureItem {
   transition: all 0.3s;
-}
-.featureController {
-  cursor: pointer;
 }
 
 .featureController > * {
@@ -97,6 +94,15 @@
 
 .featureController p {
   font-size: 0.8rem;
+}
+
+.subheading {
+  font-size: 0.7rem;
+}
+
+.aboutMeFeatureHeadings {
+  border-bottom: 1px solid var(--background-hue);
+  padding-bottom: 10px;
 }
 
 .activeFeature {
