@@ -16,6 +16,12 @@
   gap: 20px;
 }
 
+.miscContainer > * {
+  flex: 1;
+  height: 45%;
+  overflow: auto;
+}
+
 .miscContainer > *:last-child {
   flex-grow: 1;
 }

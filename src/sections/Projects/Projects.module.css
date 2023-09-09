@@ -18,16 +18,29 @@
 
 .active * {
   color: var(--primary);
+}
+
+.active > h2 > span > span {
   font-weight: 700;
 }
 
-.project > h2 > span:first-child {
+.active > .projectHeading > span:first-child > span {
+  font-weight: 700;
+}
+
+.projectHeading > span:first-child {
   font-size: 1.125rem;
   margin-right: 0.75rem;
 }
 
-.project > h2 > span:first-child > span {
+.projectHeading > span > span {
+  font-weight: 500;
+}
+
+.projectHeading > span:first-child > span {
   color: var(--primary);
+  font-weight: 300;
+  transition: all 0.3s;
 }
 
 .projectMenuContainer {
