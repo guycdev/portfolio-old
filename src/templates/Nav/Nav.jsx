@@ -5,17 +5,20 @@ import { NavLink } from "react-router-dom";
 import Heading from "../../components/Heading";
 
 export default function Nav() {
-  function handleMouseOver(e) {
-    e.currentTarget.classList.toggle(styles.hovered);
+  function handleMouseEnter(e) {
+    e.currentTarget.classList.add(styles.hovered);
+  }
+  function handleMouseExit(e) {
+    e.currentTarget.classList.remove(styles.hovered);
   }
 
   return (
     <header className={styles.navContainer}>
       <NavLink
         to=".."
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseExit}
         className={styles.homeBtn}
-        onMouseEnter={handleMouseOver}
-        onMouseLeave={handleMouseOver}
       >
         <Heading content="GC" />
       </NavLink>

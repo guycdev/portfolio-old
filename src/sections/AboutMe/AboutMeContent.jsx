@@ -20,7 +20,7 @@ export default function AboutMeContent() {
         <Heading content="Web developer currently finishing my dual degree in computer science and finance. I'm all about pushing the boundaries of my knowledge and I awlays work towards filling my gaps." />
       </p>
       <p>
-        <Heading content="I love working with React and Node and whenever I am not trying to add cool visual components to my projects you'll find me playing basketball or at the gym." />
+        <Heading content="I love working with React and Node and whenever I'm not trying to add cool visual components to my projects you'll find me playing basketball or at the gym." />
       </p>
     </div>
   );

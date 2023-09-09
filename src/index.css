@@ -20,6 +20,7 @@
     var(--primary),
     var(--secondary)
   );
+  --box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.1);
   /* --accent-heavy: #0c7b42;
   --background-hue: #343543;
   --text: #f1fef7;
@@ -44,7 +45,7 @@
   width: 100vw;
   overflow: hidden;
   background: var(--background);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 main {
@@ -176,4 +177,17 @@ main {
 
 .highlighted {
   display: inline;
+}
+
+.marquee-fixed-container {
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.marquee-container svg {
+  height: 22px;
+  width: 22px;
+  fill: var(--primary);
+  margin: 0rem 1rem;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Nav.module.css";
 import { NavLink } from "react-router-dom";
 import Heading from "../../components/Heading";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 export default function NavItems(props) {
   const { items } = props;
@@ -16,10 +16,21 @@ export default function NavItems(props) {
     const link = item.replace(regex, "-").toLowerCase();
 
     return (
-      <li
+      <motion.li
         key={index}
         onMouseEnter={handleMouseOver}
         onMouseLeave={handleMouseOver}
+        whileHover={
+          index == items.length - 1
+            ? {
+                x: 15,
+                scale: 1.05,
+                transition: {
+                  type: easeInOut,
+                },
+              }
+            : ""
+        }
       >
         <NavLink
           to={link}
@@ -27,11 +38,9 @@ export default function NavItems(props) {
         >
           <Heading content={item} />
         </NavLink>
-      </li>
+      </motion.li>
     );
   });
-
-  console.log(menuItems[0].classList);
 
   return (
     <motion.ul
