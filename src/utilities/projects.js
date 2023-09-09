@@ -10,7 +10,6 @@ import git from "../assets/overlays/git.svg";
 import css from "../assets/overlays/css.svg";
 import figma from "../assets/overlays/figma.svg";
 import openai from "../assets/tech/openai.svg";
-import js from "../assets/overlays/js.svg";
 
 const projects = [
   {
@@ -21,7 +20,7 @@ const projects = [
       live: "http://ec2-18-215-255-171.compute-1.amazonaws.com/#home",
     },
     img: analogDesigns,
-    tech: [css, react, js, node, mysql, git, figma],
+    tech: [css, react, node, mysql, git, figma],
   },
   {
     title: "SNKRS Solutions",
@@ -54,7 +53,7 @@ const projects = [
       live: "https://dancing-douhua-4d4ac1.netlify.app/",
     },
     img: quizzical,
-    tech: [css, react, js, git, figma],
+    tech: [css, react, git, figma],
   },
 ];
 

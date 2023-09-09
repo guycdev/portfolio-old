@@ -20,6 +20,7 @@
     var(--primary),
     var(--secondary)
   );
+  --box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.1);
   /* --accent-heavy: #0c7b42;
   --background-hue: #343543;
   --text: #f1fef7;
@@ -179,7 +180,7 @@ main {
 }
 
 .marquee-fixed-container {
-  box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.2);
+  box-shadow: var(--box-shadow);
   border-radius: 10px;
   padding: 0.5rem;
 }
