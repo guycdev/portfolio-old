@@ -3,7 +3,7 @@ import styles from "./Projects.module.css";
 import { ReactSVG } from "react-svg";
 import github from "../../assets/socials/github.svg";
 import globe from "../../assets/globe.svg";
-import { motion } from "framer-motion";
+import { easeInOut, easeOut, motion } from "framer-motion";
 import SvgMarquee from "../../components/SvgMarquee";
 
 export default function ProjectCard(props) {
@@ -27,7 +27,9 @@ export default function ProjectCard(props) {
           display: isActive ? "flex" : "none",
         }}
       >
-        <img src={project.img} alt={project.title} />
+        <a href={project.links.live} target="_blank">
+          <img src={project.img} alt={project.title} />
+        </a>
         <p>{project.subheading}</p>
         <SvgMarquee svgs={project.tech} />
         <div className={styles.linkContainer}>
