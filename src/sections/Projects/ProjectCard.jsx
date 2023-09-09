@@ -4,6 +4,7 @@ import { ReactSVG } from "react-svg";
 import github from "../../assets/socials/github.svg";
 import globe from "../../assets/globe.svg";
 import { motion } from "framer-motion";
+import SvgMarquee from "../../components/SvgMarquee";
 
 export default function ProjectCard(props) {
   const { projects, selectedProject } = props;
@@ -28,6 +29,7 @@ export default function ProjectCard(props) {
       >
         <img src={project.img} alt={project.title} />
         <p>{project.subheading}</p>
+        <SvgMarquee svgs={project.tech} />
         <div className={styles.linkContainer}>
           <a
             href={project.links.github}

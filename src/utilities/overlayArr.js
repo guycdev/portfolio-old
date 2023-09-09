@@ -1,11 +1,11 @@
-import brush from "../assets/overlays/brush.svg";
-import globe from "../assets/overlays/globe.svg";
-import grid from "../assets/overlays/grid.svg";
+import react from "../assets/overlays/react.svg";
+import node from "../assets/overlays/node.svg";
+import python from "../assets/overlays/python.svg";
 import mysql from "../assets/overlays/mysql.svg";
 import git from "../assets/overlays/git.svg";
 import css from "../assets/overlays/css.svg";
-import figma from "../assets/overlays/figma.svg";
+import js from "../assets/overlays/js.svg";
 
-const overlays = [brush, globe, grid, mysql, git, css];
+const overlays = [react, js, node, python, mysql, git, css];
 
 export default overlays;
