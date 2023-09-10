@@ -42,6 +42,7 @@ export default function Footer() {
             delay: 0.3 + index / linksArr.length,
           },
         }}
+        key={index}
       >
         <div className="react-svg">
           <ReactSVG src={link.logo} />
@@ -51,7 +52,7 @@ export default function Footer() {
   });
 
   return (
-    <div className={styles.footerContainer}>
+    <footer className={styles.footerContainer}>
       <motion.div
         className={styles.footerItemContainer}
         initial={{ height: "0px" }} // Include units here
@@ -64,6 +65,6 @@ export default function Footer() {
       >
         {elementArr}
       </motion.div>
-    </div>
+    </footer>
   );
 }
