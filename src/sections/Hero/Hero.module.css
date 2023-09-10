@@ -5,6 +5,26 @@
   align-items: center;
   height: 100%;
   border-radius: 10px;
+  position: relative;
+}
+
+.container > *:nth-child(2)::before {
+  font-family: "Caveat", cursive;
+  color: var(--background-hue);
+  font-size: 1.4rem;
+  content: "<welcome>";
+  position: absolute;
+  left: -20px;
+  top: 0px;
+}
+.container > *:nth-child(2)::after {
+  font-family: "Caveat", cursive;
+  color: var(--background-hue);
+  font-size: 1.4rem;
+  content: "</welcome>";
+  position: absolute;
+  left: -20px;
+  bottom: -30px;
 }
 
 .container > * {

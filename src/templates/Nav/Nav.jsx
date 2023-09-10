@@ -18,7 +18,7 @@ export default function Nav() {
         to=".."
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseExit}
-        className={styles.homeBtn}
+        className={`${styles.homeBtn}`}
       >
         <Heading content="GC" />
       </NavLink>

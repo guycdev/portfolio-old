@@ -62,3 +62,20 @@
   color: var(--background);
   font-weight: 600;
 }
+
+.last > a > span {
+  background-color: var(--primary);
+}
+
+.last:hover > a > span {
+  background-color: var(--accent);
+}
+
+.last > a > span > span {
+  color: var(--background);
+  font-weight: 400;
+}
+
+.last:hover > a > span > span {
+  color: var(--text);
+}

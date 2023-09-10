@@ -31,8 +31,9 @@
 }
 
 * {
-  /* font-family: "Nunito", sans-serif; */
-  /* font-family: "Roboto", sans-serif; */
+  /* font-family: 'Caveat', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif; */
   font-family: "Space Grotesk", sans-serif;
   color: var(--text);
   box-sizing: border-box;
@@ -82,6 +83,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  position: relative;
 }
 
 /* .content-container > *:first-child {
@@ -102,7 +104,27 @@ main {
   z-index: 1;
   margin: 0;
   font-weight: 400;
+  position: relative;
 }
+
+.main-heading:first-child > :first-child:before {
+  color: var(--background-hue);
+}
+
+/* .main-heading:first-child > :first-child:before {
+  content: "G";
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  color: var(--text);
+}
+.main-heading:first-child > :first-child::after {
+  content: "G";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  color: var(--accent);
+} */
 
 .subheading {
   font-size: 1.1rem;

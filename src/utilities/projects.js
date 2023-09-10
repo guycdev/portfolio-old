@@ -10,6 +10,7 @@ import git from "../assets/overlays/git.svg";
 import css from "../assets/overlays/css.svg";
 import figma from "../assets/overlays/figma.svg";
 import openai from "../assets/tech/openai.svg";
+import selenium from "../assets/tech/selenium.svg";
 
 const projects = [
   {
@@ -31,7 +32,7 @@ const projects = [
       live: "live.com",
     },
     img: snkrsSolutions,
-    tech: [python, css],
+    tech: [python, selenium, css],
   },
   {
     title: "High Frequency Trading Bot",
