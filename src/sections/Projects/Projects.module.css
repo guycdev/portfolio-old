@@ -4,7 +4,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
+
+/* .projectsContainer > *:nth-child(2)::before {
+  font-family: "Caveat", cursive;
+  color: var(--background-hue);
+  font-size: 1.4rem;
+  content: "<projects>";
+  position: absolute;
+  left: -20px;
+  top: -15px;
+}
+.projectsContainer > *:nth-child(2)::after {
+  font-family: "Caveat", cursive;
+  color: var(--background-hue);
+  font-size: 1.4rem;
+  content: "</projects>";
+  position: absolute;
+  left: -20px;
+  bottom: -15px;
+} */
 
 .projectsContainer > * {
   flex: 1;
