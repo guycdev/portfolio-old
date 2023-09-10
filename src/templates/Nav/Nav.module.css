@@ -69,6 +69,10 @@
 
 .last:hover > a > span {
   background-color: var(--accent);
+  box-shadow: 0px 0px 5px rgba(212, 29, 109, 0.7),
+    0px 0px 10px rgba(212, 29, 109, 0.7), 0px 0px 15px rgba(212, 29, 109, 0.7),
+    0px 0px 20px rgba(212, 29, 109, 0.7), 0px 0px 25px rgba(212, 29, 109, 0.7),
+    0px 0px 30px rgba(212, 29, 109, 0.7), 0px 0px 35px rgba(212, 29, 109, 0.7);
 }
 
 .last > a > span > span {
@@ -78,4 +82,5 @@
 
 .last:hover > a > span > span {
   color: var(--text);
+  font-weight: 600;
 }

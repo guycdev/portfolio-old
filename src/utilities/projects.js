@@ -11,6 +11,8 @@ import css from "../assets/overlays/css.svg";
 import figma from "../assets/overlays/figma.svg";
 import openai from "../assets/tech/openai.svg";
 import selenium from "../assets/tech/selenium.svg";
+import js from "../assets/overlays/js.svg";
+import bootstrap from "../assets/overlays/bootstrap.svg";
 
 const projects = [
   {
@@ -21,7 +23,7 @@ const projects = [
       live: "http://ec2-18-215-255-171.compute-1.amazonaws.com/#home",
     },
     img: analogDesigns,
-    tech: [css, react, node, mysql, git, figma],
+    tech: [js, react, node, bootstrap, css, mysql, git, figma],
   },
   {
     title: "SNKRS Solutions",
@@ -54,7 +56,7 @@ const projects = [
       live: "https://dancing-douhua-4d4ac1.netlify.app/",
     },
     img: quizzical,
-    tech: [css, react, git, figma],
+    tech: [js, react, css, git, figma],
   },
 ];
 
