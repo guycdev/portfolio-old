@@ -45,7 +45,7 @@
 }
 
 .active > .projectHeading > span:first-child > span {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.375rem;
 }
 

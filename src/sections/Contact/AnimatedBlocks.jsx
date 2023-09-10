@@ -31,8 +31,15 @@ export default function AnimatedBlocks({ amount }) {
   }, []);
 
   const blockArr = Array.from({ length: number * number }, (_, index) => (
-    <motion.div className={styles.block} key={index} drag></motion.div>
+    <motion.div
+      className={styles.block}
+      key={index}
+      drag
+      onDragEnd={(event, info) => event.target.classList.add(styles.dragged)}
+    ></motion.div>
   ));
+
+  console.log(blockArr[0]);
 
   return (
     <div

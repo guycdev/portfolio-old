@@ -9,9 +9,10 @@ export default function Contact() {
   return (
     <section className={styles.contactContainer}>
       <ContactForm />
-      <AnimatedBlocks
+      {/* <AnimatedBlocks
         amount={random[Math.floor(Math.random() * random.length)]}
-      />
+      /> */}
+      <div></div>
     </section>
   );
 }
