@@ -4,12 +4,14 @@ import AnimatedBlocks from "./AnimatedBlocks";
 import ContactForm from "./ContactForm";
 
 export default function Contact() {
-  const random = Math.floor(Math.random() * 100);
+  const random = [4, 9, 16];
 
   return (
     <section className={styles.contactContainer}>
       <ContactForm />
-      <AnimatedBlocks amount={random} />
+      <AnimatedBlocks
+        amount={random[Math.floor(Math.random() * random.length)]}
+      />
     </section>
   );
 }

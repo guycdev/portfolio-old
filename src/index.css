@@ -230,13 +230,13 @@ main {
   color: var(--text);
   border: none;
   border-bottom: thin solid var(--primary);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 textarea:focus,
 input:focus {
   outline: none;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .input-container label,
