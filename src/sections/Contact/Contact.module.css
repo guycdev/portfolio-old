@@ -3,7 +3,30 @@
 .contactContainer {
   display: flex;
   gap: 20px;
-  cursor: none;
+  align-items: center;
+}
+
+.contactHeading {
+  padding: 0.75rem 0rem;
+  /* border-bottom: 1px solid var(--primary); */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contactHeading > h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contactHeading > p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.contactHeading > p span {
+  color: var(--primary);
 }
 
 .contactContainer > * {
@@ -19,6 +42,7 @@
   gap: 0px !important;
   /* -webkit-mask-image: linear-gradient(black, transparent);
   mask-image: linear-gradient (black, transparent); */
+  cursor: none;
 }
 
 .block {
@@ -31,4 +55,25 @@
 
 .block:hover {
   opacity: 1;
+}
+
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nameContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.nameContainer > * {
+  flex: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
