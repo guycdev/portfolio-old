@@ -3,7 +3,7 @@ import styles from "./Projects.module.css";
 import { ReactSVG } from "react-svg";
 import github from "../../assets/socials/github.svg";
 import globe from "../../assets/globe.svg";
-import { easeInOut, easeOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import SvgMarquee from "../../components/SvgMarquee";
 
 export default function ProjectCard(props) {

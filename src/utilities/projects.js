@@ -13,6 +13,7 @@ import openai from "../assets/tech/openai.svg";
 import selenium from "../assets/tech/selenium.svg";
 import js from "../assets/overlays/js.svg";
 import bootstrap from "../assets/overlays/bootstrap.svg";
+import html from "../assets/tech/html.svg";
 
 const projects = [
   {
@@ -23,7 +24,44 @@ const projects = [
       live: "http://ec2-18-215-255-171.compute-1.amazonaws.com/#home",
     },
     img: analogDesigns,
-    tech: [js, react, node, bootstrap, css, mysql, git, figma],
+    tech: [
+      {
+        logo: js,
+        name: "Javascript",
+      },
+      {
+        logo: react,
+        name: "React",
+      },
+      {
+        logo: node,
+        name: "NodeJs",
+      },
+      {
+        logo: bootstrap,
+        name: "Bootsstrap",
+      },
+      {
+        logo: css,
+        name: "CSS",
+      },
+      {
+        logo: html,
+        name: "HTML",
+      },
+      {
+        logo: mysql,
+        name: "MySql",
+      },
+      {
+        logo: git,
+        name: "Git",
+      },
+      {
+        logo: figma,
+        name: "Figma",
+      },
+    ],
   },
   {
     title: "SNKRS Solutions",
@@ -34,7 +72,11 @@ const projects = [
       live: "live.com",
     },
     img: snkrsSolutions,
-    tech: [python, selenium, css],
+    tech: [
+      { logo: python, name: "Python" },
+      { logo: selenium, name: "Selenium" },
+      { logo: css, name: "CSS" },
+    ],
   },
   {
     title: "High Frequency Trading Bot",
@@ -45,7 +87,11 @@ const projects = [
       live: "https://github.com/gcWDev/HFT-Case-Comp-case-1-2",
     },
     img: ritComp,
-    tech: [python, openai, git],
+    tech: [
+      { logo: python, name: "Python" },
+      { logo: openai, name: "OpenAI" },
+      { logo: git, name: "Git" },
+    ],
   },
   {
     title: "Quizical Quiz App",
@@ -56,7 +102,13 @@ const projects = [
       live: "https://dancing-douhua-4d4ac1.netlify.app/",
     },
     img: quizzical,
-    tech: [js, react, css, git, figma],
+    tech: [
+      { logo: js, name: "Javascript" },
+      { logo: react, name: "React" },
+      { logo: css, name: "CSS" },
+      { logo: git, name: "Git" },
+      { logo: figma, name: "Figma" },
+    ],
   },
 ];
 

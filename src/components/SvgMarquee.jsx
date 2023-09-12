@@ -1,14 +1,21 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { ReactSVG } from "react-svg";
+import { motion } from "framer-motion";
 
 export default function SvgMarquee(props) {
-  const { svgs } = props;
+  const { svgs, pause } = props;
 
   const svgArr = svgs.map((svg, index) => {
     return (
-      <div className="react-svg" key={index}>
-        <ReactSVG src={svg} />
+      <div className="react-svg marquee-item" key={index}>
+        {svg.link ? (
+          <a href={svg.link} target="_blank">
+            <ReactSVG src={svg.logo} />
+          </a>
+        ) : (
+          <ReactSVG src={svg.logo} />
+        )}
       </div>
     );
   });
@@ -20,7 +27,9 @@ export default function SvgMarquee(props) {
       }}
       className="marquee-fixed-container"
     >
-      <Marquee autoFill={true}>{svgArr}</Marquee>
+      <Marquee autoFill={true} pauseOnHover={pause ? pause : null}>
+        {svgArr}
+      </Marquee>
     </div>
   );
 }

@@ -10,6 +10,10 @@ import Hero from "./sections/Hero/Hero";
 import AboutMe from "./sections/AboutMe/AboutMe";
 import Projects from "./sections/Projects/Projects";
 import Contact from "./sections/Contact/Contact";
+import Resume from "./sections/Resume/Resume";
+import Profile from "./sections/Resume/Profile";
+import Education from "./sections/Resume/Education";
+import Involvment from "./sections/Resume/Involvment";
 
 const route = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +21,11 @@ const route = createBrowserRouter(
       <Route index element={<Hero />} />
       <Route path="/about-me" element={<AboutMe />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/resume" element={<Resume />}>
+        <Route index element={<Profile />} />
+        <Route path="education" element={<Education />} />
+        <Route path="involvment" element={<Involvment />} />
+      </Route>
       <Route path="/get-in-touch" element={<Contact />} />
     </Route>
   )

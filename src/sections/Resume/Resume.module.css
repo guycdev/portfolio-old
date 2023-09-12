@@ -1,0 +1,84 @@
+@import "../../index.css";
+
+.resumeContainer {
+  display: flex;
+}
+
+.menuContainer {
+  flex: 1;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0rem;
+  list-style: none;
+}
+
+.menuContainer a {
+  text-decoration: none;
+}
+
+.resumeContainer > div:last-child {
+  flex: 3;
+}
+
+.menuContainer > li > a {
+  transition: all 0.3s;
+  font-size: 1.5rem;
+}
+
+.menuContainer a > span > span {
+  font-weight: 800;
+}
+
+.active > span > span,
+.hovered > span > span {
+  color: var(--primary);
+}
+
+.hovered {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.resumeSubheading {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+  gap: 20px;
+  margin: 0.25rem 0rem;
+}
+
+.resumeSubheading > span {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.resumeSubheading > span:hover {
+  color: var(--accent);
+}
+
+.marqueeLabel {
+  font-size: 0.75rem;
+}
+
+.educationContainer {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

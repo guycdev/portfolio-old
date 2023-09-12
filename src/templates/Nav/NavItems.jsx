@@ -15,10 +15,6 @@ export default function NavItems(props) {
     const regex = / /g;
     const link = item.replace(regex, "-").toLowerCase();
 
-    // if (Math.abs(index - items.length) <= 1) {
-    //   return null;
-    // }
-
     return (
       <motion.li
         key={index}
