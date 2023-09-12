@@ -43,16 +43,18 @@ export default function ProjectCard(props) {
               <ReactSVG src={github} />
             </div>
           </a>
-          <a
-            href={project.links.live}
-            target="_blank"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseExit}
-          >
-            <div className="react-svg">
-              <ReactSVG src={globe} />
-            </div>
-          </a>
+          {project.links.live && (
+            <a
+              href={project.links.live}
+              target="_blank"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseExit}
+            >
+              <div className="react-svg">
+                <ReactSVG src={globe} />
+              </div>
+            </a>
+          )}
         </div>
       </div>
     );

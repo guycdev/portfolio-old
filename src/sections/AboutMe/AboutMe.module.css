@@ -36,16 +36,6 @@
   gap: 20px;
 }
 
-.miscContainer > * {
-  flex: 1;
-  height: 45%;
-  overflow: auto;
-}
-
-.miscContainer > *:last-child {
-  flex-grow: 1;
-}
-
 .blob {
   transform: scale(0.7) rotate(90deg);
 }
@@ -60,20 +50,21 @@
 .aboutMeContentContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
+  gap: 10px !important;
 }
 
 .aboutMeFeatureControllerContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow: auto;
+  flex-grow: 1;
+  gap: 10px !important;
 }
 
 .aboutMeContentContainer > h3,
 .aboutMeFeatureControllerContainer > div > h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .aboutMeContentContainer > h3 *,
@@ -94,7 +85,7 @@
 }
 
 .aboutMeContentContainer > p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .feature,
@@ -104,6 +95,13 @@
 
 .featureItem {
   transition: all 0.3s;
+}
+
+.featureController {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .featureController > * {

@@ -77,7 +77,7 @@ main {
   width: 100%;
   border: 5px solid var(--background);
   border-radius: 15px;
-  padding: 1.4rem 2.6rem;
+  padding: 1rem 2rem;
   background: var(--background);
   display: flex;
   flex-direction: column;
@@ -87,16 +87,14 @@ main {
 }
 
 /* .content-container > *:first-child {
-  height: 8%;
+  height: 9%;
 }
 
-
-
 .content-container > *:last-child {
-  height: 8%;
+  height: 9%;
 } */
 .content-container > *:nth-child(2) {
-  height: 83%;
+  height: 81%;
 }
 
 .main-heading {
@@ -281,24 +279,25 @@ main {
 
 .input-container input,
 .input-container textarea {
-  padding: 10px;
-  font-size: 0.7rem;
+  padding: 20px;
   background-color: transparent;
+  font-size: 0.8rem;
+
   color: var(--text);
   border: none;
   border-bottom: thin solid var(--primary);
   transition: all 0.5s;
 }
 
+label {
+  color: var(--primary);
+}
+
 textarea:focus,
 input:focus {
   outline: none;
   border-radius: 50px;
-}
-
-.input-container label,
-.input-container textarea {
-  font-size: 0.7rem;
+  box-shadow: 0 -2px #ffffff40, inset 0 2px 3px #0003;
 }
 
 .embla {

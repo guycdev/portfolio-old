@@ -68,8 +68,7 @@ const projects = [
     subheading:
       "Suite of web scrapers / automation pool used for retail arbitrage",
     links: {
-      github: "",
-      live: "live.com",
+      github: "https://github.com/gcWDev/snkrs_solutions_suite",
     },
     img: snkrsSolutions,
     tech: [
@@ -84,7 +83,6 @@ const projects = [
       "Arbitrage trading bot used for the RIT high frequency trading platform",
     links: {
       github: "https://github.com/gcWDev/HFT-Case-Comp-case-1-2",
-      live: "https://github.com/gcWDev/HFT-Case-Comp-case-1-2",
     },
     img: ritComp,
     tech: [
