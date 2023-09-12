@@ -9,7 +9,7 @@ import HomeLayout from "./Layouts/HomeLayout";
 import Hero from "./sections/Hero/Hero";
 import AboutMe from "./sections/AboutMe/AboutMe";
 import Projects from "./sections/Projects/Projects";
-import Contact from "./sections/Contact/Contact";
+import Contact, { formAction as action } from "./sections/Contact/Contact";
 import Resume from "./sections/Resume/Resume";
 import Profile from "./sections/Resume/Profile";
 import Education from "./sections/Resume/Education";

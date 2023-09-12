@@ -93,7 +93,7 @@
 
 .headingContainer {
   z-index: 2;
-  width: 100%;
+  font-size: 1.25rem;
 }
 
 .headingContainer > h2 * {
@@ -177,6 +177,11 @@
 .contactLine > p * {
   font-size: 0.8rem;
   color: var(--primary);
+  transition: all 0.3s;
+}
+
+.contactLine:hover > p * {
+  color: var(--accent);
 }
 
 .socialsContainer > a {
