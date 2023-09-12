@@ -207,11 +207,68 @@ main {
   padding: 0.5rem;
 }
 
+.marquee-label {
+  font-size: 0.7rem;
+  color: var(--accent);
+}
+
 .marquee-container svg {
   height: 22px;
   width: 22px;
   fill: var(--primary);
   margin: 0rem 1rem;
+}
+
+.resume-marquee .marquee-fixed-container {
+  box-shadow: none;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.resume-marquee .marquee-fixed-container:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.resume-marquee .marquee-container svg {
+  height: 30px;
+  width: 30px;
+  margin: 0rem 1rem;
+}
+
+.resume-marquee .marquee-container .react-svg svg {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.resume-marquee .marquee-container .react-svg:hover svg {
+  fill: var(--accent);
+}
+
+.resume-marquee {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resume-marquee > div > * {
+  max-width: 400px !important;
+}
+
+.resume-marquee > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resume-marquee .react-svg {
+  margin: 0rem 1rem !important;
+}
+
+.marquee-item {
+  position: relative;
+  overflow: visible;
 }
 
 .input-container {
