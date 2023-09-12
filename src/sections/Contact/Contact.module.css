@@ -80,6 +80,13 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 100%;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+}
+
+.contactFormContainer > *:last-child {
+  height: 80%;
 }
 
 .nameContainer {
@@ -95,7 +102,9 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .form > div:last-child {
