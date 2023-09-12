@@ -4,6 +4,7 @@ import Heading from "../../components/Heading";
 import Button from "../../components/Button";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function HeroCta() {
   return (
@@ -38,8 +39,12 @@ export default function HeroCta() {
         <Heading content="I'm Guy, a computer science and finance student eager to innovate on your engineering team. Data-Driven, Dollar-Smart: Uniting Financial Acumen and Tech Skills to provide your team with a big picture perspective." />
       </p>
       <div className={styles.btnContainer}>
-        <Button style="primary-btn" text="Get in Touch" id={1} />
-        <Button style="secondary-btn" text="My Projects" id={2} />
+        <Link to="get-in-touch">
+          <Button style="primary-btn" text="Get in Touch" id={1} />
+        </Link>
+        <Link to="projects">
+          <Button style="secondary-btn" text="My Projects" id={2} />
+        </Link>
       </div>
     </div>
   );
