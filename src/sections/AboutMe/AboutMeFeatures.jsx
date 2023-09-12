@@ -37,7 +37,7 @@ export default function AboutMeFeatures(props) {
           <Heading content="Favorite Features" />
         </h3>
         <p className={styles.subheading}>
-          <Heading content="Scroll to look through my favorite costume UI components" />
+          <Heading content="Scroll to look through the UI components I enjoyed creating most" />
         </p>
       </div>
       <div className={styles.featureController}>{featureControllerArr}</div>
