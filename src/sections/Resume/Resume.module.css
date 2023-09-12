@@ -21,7 +21,7 @@
 }
 
 .resumeContainer > div:last-child {
-  flex: 2;
+  flex: 3;
 }
 
 .menuContainer > li > a {
@@ -73,4 +73,12 @@
 
 .marqueeLabel {
   font-size: 0.75rem;
+}
+
+.educationContainer {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }

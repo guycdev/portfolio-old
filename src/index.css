@@ -253,7 +253,7 @@ main {
 }
 
 .resume-marquee > div > * {
-  max-width: 400px !important;
+  max-width: 500px !important;
 }
 
 .resume-marquee > div {
@@ -311,4 +311,30 @@ input:focus {
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.experience-container * {
+  text-align: center;
+}
+
+.date span,
+.location span {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 300;
+}
+
+.type span {
+  color: var(--primary);
+}
+
+.subject span,
+.experience span {
+  font-weight: 300;
 }

@@ -28,9 +28,9 @@ export default function Profile() {
           <span>dual degree</span> in CS and finance.
         </p>
         <p className={styles.resumeSubheading}>
-          Currently searching for a <span>challenging internship</span> to apply
-          a unique blend of <span>tech</span> and <span>financial</span> skills
-          in.
+          <span>Currently</span> searching for a{" "}
+          <span>challenging internship</span> to apply a unique blend of{" "}
+          <span>tech</span> and <span>financial</span> skills in.
         </p>
       </div>
       <div className="resume-marquee">

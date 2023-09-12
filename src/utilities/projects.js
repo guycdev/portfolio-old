@@ -13,6 +13,7 @@ import openai from "../assets/tech/openai.svg";
 import selenium from "../assets/tech/selenium.svg";
 import js from "../assets/overlays/js.svg";
 import bootstrap from "../assets/overlays/bootstrap.svg";
+import html from "../assets/tech/html.svg";
 
 const projects = [
   {
@@ -43,6 +44,10 @@ const projects = [
       {
         logo: css,
         name: "CSS",
+      },
+      {
+        logo: html,
+        name: "HTML",
       },
       {
         logo: mysql,
