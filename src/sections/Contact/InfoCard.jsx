@@ -12,6 +12,7 @@ import { ReactSVG } from "react-svg";
 import github from "../../assets/socials/github.svg";
 import linkedin from "../../assets/socials/linkedin.svg";
 import twitter from "../../assets/socials/twitter.svg";
+import { motion } from "framer-motion";
 
 export default function InfoCard() {
   return (
@@ -48,27 +49,54 @@ export default function InfoCard() {
         </a>
       </div>
       <div className={styles.socialsContainer}>
-        <a
+        <motion.a
           className="react-svg"
           href="https://github.com/gcWDev"
           target="_blank"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: {
+              delay: 0.3,
+            },
+          }}
         >
           <ReactSVG src={github} />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           className="react-svg"
           href="https://twitter.com/gcWDev"
           target="_blank"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: {
+              delay: 0.5,
+            },
+          }}
         >
           <ReactSVG src={twitter} />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           className="react-svg"
           href="https://www.linkedin.com/in/guy-cohen-96a6141ab/"
           target="_blank"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: {
+              delay: 0.7,
+            },
+          }}
         >
           <ReactSVG src={linkedin} />
-        </a>
+        </motion.a>
       </div>
       <div className={styles.accentBlob}>
         <div className={styles.primaryBlob}></div>
