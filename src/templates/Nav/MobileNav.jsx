@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ReactSVG } from "react-svg";
 import close from "../../assets/close.svg";
 import { motion } from "framer-motion";
@@ -18,6 +18,27 @@ export default function MobileNav() {
   function handleClick() {
     setIsClicked((prev) => !prev);
   }
+
+  useEffect(() => {
+    const isOnIndexPage = location.pathname === "/";
+    const styleElement = document.createElement("style");
+
+    if (isOnIndexPage) {
+      styleElement.innerHTML = `
+        #root {
+          height: 100vh !important;
+        }
+      `;
+      document.head.appendChild(styleElement);
+    } else {
+      styleElement.innerHTML = `
+        #root {
+          height: 100% !important;
+        }
+      `;
+      document.head.appendChild(styleElement);
+    }
+  }, [location.pathname]);
 
   return (
     <>

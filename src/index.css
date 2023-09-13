@@ -451,7 +451,10 @@ input:focus {
 
 @media (max-width: 550px) {
   #root {
-    height: unset;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: stretch;
+    height: 100%;
   }
 
   .content-container {
