@@ -39,11 +39,13 @@ export default function ContactForm() {
         }}
       >
         <Form className={styles.form} method="POST">
-          <Confetti
-            recycle={false}
-            numberOfPieces={500}
-            colors={["#8eb3ff", "#d41e6c", "#c5d2ec"]}
-          />
+          {action && (
+            <Confetti
+              recycle={false}
+              numberOfPieces={500}
+              colors={["#8eb3ff", "#d41e6c", "#c5d2ec"]}
+            />
+          )}
           <div className={styles.nameContainer}>
             <FormInput
               label="Name"
