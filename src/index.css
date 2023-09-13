@@ -389,6 +389,30 @@ input:focus {
   box-shadow: var(--box-shadow);
 }
 
+@media (max-width: 1150px) {
+  .main-heading {
+    font-size: 4.5rem;
+  }
+  .typewriter {
+    font-size: 2rem;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1110px) {
+  .main-heading {
+    font-size: 3.5rem;
+  }
+  .typewriter {
+    font-size: 1.5rem;
+  }
+  .subheading {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 840px) {
   .resume-marquee > div > * {
     max-width: 400px !important;
@@ -421,6 +445,15 @@ input:focus {
   }
 }
 
+@media (max-width: 500px) {
+  .main-heading {
+    font-size: 4rem;
+  }
+  .typewriter {
+    font-size: 1.75rem;
+  }
+}
+
 @media (max-width: 475px) {
   .resume-marquee > div > * {
     max-width: 250px !important;
@@ -428,6 +461,26 @@ input:focus {
   .resume-marquee svg {
     width: 15px;
     height: 15px;
+  }
+}
+
+@media (max-width: 460px) {
+  .main-heading {
+    font-size: 3.5rem;
+  }
+  .typewriter {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .main-heading {
+    font-size: 3rem;
+  }
+  .typewriter {
+    font-size: 1.25rem;
+  }
+  .subheading {
+    font-size: 0.7rem;
   }
 }
 
