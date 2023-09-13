@@ -30,6 +30,10 @@
   flex: 1;
 }
 
+.container > *:first-child {
+  flex: 0.5;
+}
+
 .miscContainer {
   display: flex;
   flex-direction: column;
@@ -63,7 +67,8 @@
 }
 
 .aboutMeContentContainer > h3,
-.aboutMeFeatureControllerContainer > div > h3 {
+.aboutMeFeatureControllerContainer > div > h3,
+.windowControllerContainer > h3 {
   font-size: 1.4rem;
 }
 
@@ -162,7 +167,6 @@
 }
 
 .windowControllerContainer > *:last-child * {
-  font-size: 2rem;
   color: var(--primary);
 }
 
@@ -190,10 +194,16 @@
   fill: var(--background);
 }
 
+.videoPlayerContainer {
+  display: flex;
+  justify-content: center;
+}
+
 video {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  max-width: 585px;
 }
 
 .linkContainer {
@@ -210,4 +220,80 @@ video {
   padding: 0.5rem 1rem;
   border-radius: 50px;
   transition: all 0.3s;
+}
+
+@media (max-width: 1175px) {
+  /* .aboutMeProfileContainer {
+    flex: 0.5;
+  } */
+  .aboutMeProfileContainer img {
+    width: 250px;
+    height: 250px;
+  }
+  /* .miscContainer {
+    flex: 1.2;
+  }
+  .codeSnippetContainer {
+    flex: 1.4;
+  } */
+
+  pre {
+    width: 350px;
+  }
+  .container > * {
+    flex: unset;
+  }
+}
+
+@media (max-width: 1075px) {
+  .aboutMeContentContainer > h3,
+  .aboutMeFeatureControllerContainer > div > h3,
+  .windowControllerContainer > h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1045px) {
+  .aboutMeProfileContainer img {
+    width: 200px;
+    height: 200px;
+  }
+  .aboutMeProfileContainer button {
+    font-size: 0.9rem;
+  }
+  pre {
+    width: 300px;
+  }
+}
+
+@media (max-width: 950px) {
+  pre {
+    width: 250px;
+  }
+  .windowControllerContainer > h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutMeProfileContainer {
+    display: none;
+  }
+  .container > * {
+    flex: 1;
+  }
+  pre {
+    width: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  pre {
+    max-height: 400px;
+    width: 100%;
+  }
 }
