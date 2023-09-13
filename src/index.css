@@ -449,6 +449,16 @@ input:focus {
   }
 }
 
+@media (max-width: 550px) {
+  #root {
+    height: unset;
+  }
+
+  .content-container {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 500px) {
   .main-heading {
     font-size: 4rem;
