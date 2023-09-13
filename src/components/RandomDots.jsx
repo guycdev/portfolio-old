@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function (props) {
   const { amount } = props;
@@ -17,7 +18,7 @@ export default function (props) {
 
   for (let i = 0; i <= amount; i++) {
     elementArr.push(
-      <div
+      <motion.div
         className="random-dots"
         style={
           i % 2 == 0
@@ -31,7 +32,16 @@ export default function (props) {
               }
         }
         key={i}
-      ></div>
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 0.075,
+          transition: {
+            delay: i * 0.008,
+          },
+        }}
+      ></motion.div>
     );
   }
   return <>{elementArr}</>;

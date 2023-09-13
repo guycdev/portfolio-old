@@ -209,3 +209,51 @@
 .socialsContainer > a:hover {
   background-color: var(--primary);
 }
+
+@media (max-width: 1030px) {
+  .accentBlob {
+    opacity: 0.2;
+  }
+  .contactInformation {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .contactInformation {
+    display: none;
+  }
+  .contactContainer {
+    padding: 3rem !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .contactContainer {
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .nameContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactHeading > h2 {
+    font-size: 1.3rem;
+  }
+  .contactHeading > p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .contactHeading > h2 {
+    font-size: 1.1rem;
+  }
+  .contactHeading > p {
+    font-size: 0.5rem;
+  }
+}
