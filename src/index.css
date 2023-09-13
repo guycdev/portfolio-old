@@ -469,6 +469,15 @@ input:focus {
   .typewriter {
     font-size: 1.75rem;
   }
+
+  body,
+  html {
+    height: 100%;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 475px) {
