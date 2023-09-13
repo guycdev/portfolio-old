@@ -140,3 +140,30 @@
   text-decoration: none;
   width: fit-content;
 }
+
+@media (max-width: 900px) {
+  .active {
+    font-size: 1.2rem !important;
+  }
+  .project {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .projectsContainer {
+    flex-direction: column;
+  }
+  .projectMenuContainer {
+    flex-direction: row;
+  }
+
+  .projectCard img {
+    width: 75%;
+    height: 75%;
+  }
+  .projectCard > div:first-child > a {
+    display: flex;
+    justify-content: center;
+  }
+}
