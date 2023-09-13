@@ -53,7 +53,9 @@ export default function ProfileCard() {
       <h5>
         <Heading content="cohenguy74@gmail.com" />
       </h5>
-      <Button style="primary-btn" text="Download CV" />
+      <a href="/Guy-Cohen-Resume.pdf" download>
+        <Button style="primary-btn" text="Download CV" />
+      </a>
     </div>
   );
 }

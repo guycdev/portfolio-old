@@ -39,7 +39,7 @@ export default function WindowController(props) {
         </div>
       </div>
       <h3>
-        <Heading content="Snippets" />
+        <Heading content="Snippets & Demos" />
       </h3>
     </div>
   );
