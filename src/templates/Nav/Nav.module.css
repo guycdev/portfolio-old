@@ -85,6 +85,16 @@
   font-weight: 600;
 }
 
+.navOverlay {
+  width: 300vw;
+  height: 300vw;
+  background-color: rgba(0, 10, 30, 0.8);
+  z-index: 99;
+  position: fixed;
+  margin: -2rem 0;
+  left: 0;
+}
+
 @media (max-width: 610px) {
   .navItems > li > a {
     font-size: 0.7rem;
@@ -92,4 +102,33 @@
 }
 
 @media (max-width: 550px) {
+  .navContainer {
+    justify-content: space-between;
+  }
+  .navItems {
+    flex-direction: column;
+    border: none;
+    margin: 3rem 0rem;
+  }
+  .mobileNav {
+    position: fixed;
+    height: 100vh;
+    background-color: var(--card-bg);
+    z-index: 999;
+    top: 0px;
+    width: 33vw;
+    left: 0px;
+    padding: 1rem;
+    border-radius: 0px 10px 10px 0px;
+    border-right: 1px solid rgba(214, 227, 254, 0.3);
+  }
+  .navItems > li > a {
+    border: 1px solid rgba(214, 227, 254, 0.3);
+    border-radius: 50px;
+  }
+  .closeBtn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
 }

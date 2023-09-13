@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { ReactSVG } from "react-svg";
 import close from "../../assets/close.svg";
 import { motion } from "framer-motion";
+import NavItems from "./NavItems";
+import { NavLink } from "react-router-dom";
+import styles from "./Nav.module.css";
+import Heading from "../../components/Heading";
 
 export default function MobileNav() {
   const navVariants = {
@@ -16,7 +20,10 @@ export default function MobileNav() {
   }
 
   return (
-    <header>
+    <>
+      <NavLink to=".." className={`${styles.homeBtn}`}>
+        <Heading content="GC" />
+      </NavLink>
       <div
         className="burger-icon"
         onClick={handleClick}
@@ -27,7 +34,7 @@ export default function MobileNav() {
         <div className="burger-line"></div>
       </div>
       <motion.nav
-        className="mobile-nav"
+        className={styles.mobileNav}
         animate={isClicked ? "open" : "closed"}
         initial="closed"
         variants={navVariants}
@@ -37,26 +44,16 @@ export default function MobileNav() {
           src={close}
           onClick={() => handleClick()}
           beforeInjection={(svg) => {
-            svg.classList.add("close-btn");
+            svg.classList.add(styles.closeBtn);
           }}
         />
-        <div className="logos">
-          <img src={logo} alt="Analog Studio Logo" />
-          <h3 className="logo">{name}</h3>
-        </div>
-        <MiscNavItems theme={theme} />
-        <hr />
-        <NavContent
-          theme={theme}
-          style="mobile-content-container"
-          setIsClicked={setIsClicked}
-        />
+        <NavItems items={["About Me", "Projects", "Resume", "Get in Touch"]} />
       </motion.nav>
       <div
-        className="nav-overlay"
+        className={styles.navOverlay}
         style={{ display: isClicked ? "block" : "none" }}
         onClick={handleClick}
       ></div>
-    </header>
+    </>
   );
 }
