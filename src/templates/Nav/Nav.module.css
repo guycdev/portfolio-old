@@ -84,3 +84,12 @@
   color: var(--text);
   font-weight: 600;
 }
+
+@media (max-width: 610px) {
+  .navItems > li > a {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 550px) {
+}

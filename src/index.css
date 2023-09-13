@@ -86,13 +86,28 @@ main {
   position: relative;
 }
 
-/* .content-container > *:first-child {
-  height: 9%;
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+  background-color: var(--card-color);
+  width: 52px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  left: 1.25rem;
+  top: 0;
+  margin: 10px 0px;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+.burger-line {
+  width: 30px;
+  height: 2px;
+  background-color: #000000;
 }
 
-.content-container > *:last-child {
-  height: 9%;
-} */
 .content-container > *:nth-child(2) {
   height: 81%;
 }
@@ -104,25 +119,6 @@ main {
   font-weight: 400;
   position: relative;
 }
-
-.main-heading:first-child > :first-child:before {
-  color: var(--background-hue);
-}
-
-/* .main-heading:first-child > :first-child:before {
-  content: "G";
-  position: absolute;
-  left: -4px;
-  top: -4px;
-  color: var(--text);
-}
-.main-heading:first-child > :first-child::after {
-  content: "G";
-  position: absolute;
-  left: 6px;
-  top: 6px;
-  color: var(--accent);
-} */
 
 .subheading {
   font-size: 1.1rem;
@@ -389,7 +385,16 @@ input:focus {
   box-shadow: var(--box-shadow);
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1300px) {
+  .main-heading {
+    font-size: 5rem;
+  }
+  .typewriter {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 1170px) {
   .main-heading {
     font-size: 4.5rem;
   }
@@ -425,7 +430,7 @@ input:focus {
 
 @media (max-width: 700px) {
   #root {
-    height: unset;
+    /* height: unset; */
   }
   .bullet::before {
     display: none;
