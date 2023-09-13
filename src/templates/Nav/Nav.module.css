@@ -24,6 +24,7 @@
   text-decoration: none;
   transition: all 0.3s;
   font-weight: 300;
+  box-shadow: var(--box-shadow);
 }
 
 .homeBtn > span > span {
