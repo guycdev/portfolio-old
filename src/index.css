@@ -362,7 +362,6 @@ input:focus {
   z-index: 1;
   background-color: transparent;
   transition: all 0.1s;
-  opacity: 0.075;
 }
 
 .bullet-list {
