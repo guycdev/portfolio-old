@@ -1,12 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Button(props) {
-  const { text, style, id } = props;
+  const { text, style, id, onClick } = props;
 
   return (
     <motion.button
-      className={style}
+      className={`${style} ${onClick ? `${style}-clicked` : null}`}
       initial={{
         opacity: 0,
       }}
@@ -16,8 +18,10 @@ export default function Button(props) {
           delay: id / 10 + 0.5,
         },
       }}
+      disabled={onClick == true}
     >
-      {text}
+      {onClick ? "Success" : text}
+      {onClick && <FontAwesomeIcon icon={faCheck} />}
     </motion.button>
   );
 }

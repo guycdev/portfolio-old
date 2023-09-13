@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../../components/Heading";
 import styles from "./Contact.module.css";
-import { Form } from "react-router-dom";
+import { Form, useActionData } from "react-router-dom";
 import FormInput from "../../components/FormInput";
 import {
   faEnvelope,
@@ -12,8 +12,11 @@ import {
 import FormTextArea from "../../components/FormTextArea";
 import Button from "../../components/Button";
 import { motion } from "framer-motion";
+import Confetti from "react-confetti";
 
 export default function ContactForm() {
+  const action = useActionData();
+
   return (
     <div className={styles.contactFormContainer}>
       <div className={styles.contactHeading}>
@@ -35,7 +38,12 @@ export default function ContactForm() {
           },
         }}
       >
-        <Form className={styles.form}>
+        <Form className={styles.form} method="POST">
+          <Confetti
+            recycle={false}
+            numberOfPieces={500}
+            colors={["#8eb3ff", "#d41e6c", "#c5d2ec"]}
+          />
           <div className={styles.nameContainer}>
             <FormInput
               label="Name"
@@ -71,7 +79,12 @@ export default function ContactForm() {
             icon={faMessage}
           />
           <div>
-            <Button style="secondary-btn" text="Submit" id={0} />
+            <Button
+              style="secondary-btn"
+              text="Submit"
+              id={0}
+              onClick={action}
+            />
           </div>
         </Form>
       </motion.div>

@@ -28,7 +28,7 @@ const route = createBrowserRouter(
         <Route path="experience" element={<Experience />} />
         <Route path="involvment" element={<Involvment />} />
       </Route>
-      <Route path="/get-in-touch" element={<Contact />} />
+      <Route path="/get-in-touch" element={<Contact />} action={action} />
     </Route>
   )
 );

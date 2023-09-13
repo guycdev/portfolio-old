@@ -133,6 +133,10 @@ main {
   display: flex;
 }
 
+button {
+  transition: all 0.3s;
+}
+
 .primary-btn,
 .secondary-btn {
   padding: 10px 35px;
@@ -170,6 +174,14 @@ main {
   box-shadow: 0 0 10px 5px rgba(143, 179, 255, 0.4),
     0 0 20px 10px rgba(143, 179, 255, 0.2);
   color: var(--background);
+}
+
+.secondary-btn-clicked {
+  background-color: rgb(117, 17, 60);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .typewriter {

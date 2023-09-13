@@ -30,6 +30,7 @@ export default function (props) {
                 right: coordinateRandomizerX(i),
               }
         }
+        key={i}
       ></div>
     );
   }
