@@ -27,8 +27,25 @@ export default function ProjectCard(props) {
           display: isActive ? "flex" : "none",
         }}
       >
-        <a href={project.links.live} target="_blank">
+        <a href={project.links.live} target="_blank" className={styles.imgLink}>
           <img src={project.img} alt={project.title} />
+          <div className={styles.projectInfoContainer}>
+            <div>
+              <h4 className={styles.projectTitle}>{project.title}</h4>
+              <p className={styles.projectDescription}>
+                {project.descriptiveSubheading}
+              </p>
+            </div>
+            <div className={styles.tagContainer}>
+              {project.tech.map((t, index) => {
+                return (
+                  <p key={index} className={styles.tag}>
+                    {t.name}
+                  </p>
+                );
+              })}
+            </div>
+          </div>
         </a>
         <p>{project.subheading}</p>
         <SvgMarquee svgs={project.tech} />

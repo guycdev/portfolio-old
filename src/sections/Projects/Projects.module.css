@@ -86,6 +86,50 @@
   padding: 1.2rem;
 }
 
+.imgLink {
+  position: relative;
+}
+
+.projectInfoContainer {
+  position: absolute;
+  padding: 1rem;
+  top: 0px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+  transition: all 0.3s;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.imgLink:hover > .projectInfoContainer {
+  opacity: 0.9;
+}
+
+.projectTitle {
+  font-size: 2rem;
+}
+
+.tagContainer {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(5, auto);
+  gap: 20px;
+  justify-items: center;
+}
+
+.projectCard .tag {
+  padding: 0.3rem 0.5rem;
+  border-radius: 10px;
+  background-color: var(--text);
+  color: var(--background);
+  box-shadow: var(--box-shadow);
+  font-size: 0.75rem;
+}
+
 .projectCard img {
   width: 100%;
   height: 100%;
@@ -95,6 +139,12 @@
   aspect-ratio: 3.75/2;
   object-position: 0% 0%;
   transition: all 0.3s;
+  border: 2px solid var(--primary);
+}
+
+.projectCard .projectDescription {
+  font-size: 0.7rem;
+  color: var(--primary);
 }
 
 .projectCard img:hover {
@@ -141,6 +191,17 @@
   width: fit-content;
 }
 
+@media (max-width: 1060px) {
+  .tagContainer {
+    grid-template-columns: repeat(4, auto);
+    gap: 5px;
+  }
+
+  .projectTitle {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 900px) {
   .active {
     font-size: 1.2rem !important;
@@ -157,11 +218,19 @@
   .projectMenuContainer {
     flex-direction: row;
   }
+  .projectInfoContainer {
+    display: none;
+  }
+
+  .projectCard p {
+    width: 75%;
+  }
 
   .projectCard img {
     width: 75%;
     height: 75%;
   }
+
   .projectCard > div:first-child > a {
     display: flex;
     justify-content: center;

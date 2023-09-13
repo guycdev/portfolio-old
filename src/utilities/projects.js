@@ -19,6 +19,9 @@ const projects = [
   {
     title: "Analog Designs",
     subheading: "Full-stack order management website for my design agency",
+    descriptiveSubheading:
+      "80% reduction in manual communication time, managing 8 active users.",
+
     links: {
       github: "https://github.com/gcWDev/Analog-Designs",
       live: "http://ec2-18-215-255-171.compute-1.amazonaws.com/#home",
@@ -67,6 +70,9 @@ const projects = [
     title: "SNKRS Solutions",
     subheading:
       "Suite of web scrapers / automation pool used for retail arbitrage",
+    descriptiveSubheading:
+      "Generated $350K in lifetime revenue, automated inventory worth $40K.",
+
     links: {
       github: "https://github.com/gcWDev/snkrs_solutions_suite",
     },
@@ -81,6 +87,9 @@ const projects = [
     title: "High Frequency Trading Bot",
     subheading:
       "Arbitrage trading bot used for the RIT high frequency trading platform",
+    descriptiveSubheading:
+      "Got 1st place by outperforming 38 participants, achieved a P/L differential of $100K above mean.",
+
     links: {
       github: "https://github.com/gcWDev/HFT-Case-Comp-case-1-2",
     },
@@ -95,6 +104,8 @@ const projects = [
     title: "Quizical Quiz App",
     subheading:
       "Dynamic quiz app with user controlled category, difficulty, and type",
+    descriptiveSubheading:
+      "Implemented dynamic user settings for a personalized quiz experience.",
     links: {
       github: "https://github.com/gcWDev/Quizzical",
       live: "https://dancing-douhua-4d4ac1.netlify.app/",
