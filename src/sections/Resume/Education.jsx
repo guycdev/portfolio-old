@@ -12,7 +12,7 @@ export default function Education() {
       geo: "Toronto, ON, Canada",
     },
     {
-      duration: "2023-2024",
+      duration: "2023-Present",
       type: "Bachelor of Science",
       subject: "Computer Science",
       experience: "Oregon State University",
