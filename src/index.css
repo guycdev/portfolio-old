@@ -428,9 +428,6 @@ input:focus {
 }
 
 @media (max-width: 700px) {
-  #root {
-    /* height: unset; */
-  }
   .bullet::before {
     display: none;
   }
@@ -450,15 +447,19 @@ input:focus {
 }
 
 @media (max-width: 550px) {
-  #root {
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: stretch;
-    height: 100%;
-  }
-
   .content-container {
     padding: 1rem;
+  }
+  .marquee-fixed-container {
+    max-width: 200px !important;
+  }
+  #root {
+    height: unset;
+    min-height: 100vh;
+  }
+  main,
+  .content-container {
+    min-height: 100vh;
   }
 }
 
@@ -468,15 +469,6 @@ input:focus {
   }
   .typewriter {
     font-size: 1.75rem;
-  }
-
-  body,
-  html {
-    height: 100%;
-    background-color: var(--background);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 

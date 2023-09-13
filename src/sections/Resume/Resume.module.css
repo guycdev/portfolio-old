@@ -130,6 +130,9 @@
   .menuContainer > li > a {
     font-size: 1rem;
   }
+  .menuContainer {
+    padding: 1rem 0rem;
+  }
 }
 
 @media (max-width: 490px) {

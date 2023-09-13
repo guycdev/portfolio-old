@@ -150,7 +150,7 @@
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 760px) {
   .projectsContainer {
     flex-direction: column;
   }
@@ -165,5 +165,31 @@
   .projectCard > div:first-child > a {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .active {
+    font-size: 1.2rem !important;
+  }
+  .projectMenuContainer > li > a {
+    font-size: 1rem;
+  }
+  .projectCard a {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .projectMenuContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  .projectsContainer {
+    gap: 20px;
   }
 }
