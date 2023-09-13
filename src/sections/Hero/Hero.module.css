@@ -5,26 +5,29 @@
   align-items: center;
   height: 100%;
   border-radius: 10px;
+}
+
+.heroContainer {
   position: relative;
 }
 
-.container > *:nth-child(2)::before {
+.heroContainer::before {
   font-family: "Caveat", cursive;
   color: var(--background-hue);
   font-size: 1.4rem;
   content: "<welcome>";
   position: absolute;
-  left: -20px;
-  top: 0px;
+  top: -30px;
+  left: -5px;
 }
-.container > *:nth-child(2)::after {
+.heroContainer::after {
   font-family: "Caveat", cursive;
   color: var(--background-hue);
   font-size: 1.4rem;
   content: "</welcome>";
   position: absolute;
-  left: -20px;
-  bottom: -30px;
+  left: -5px;
+  bottom: -40px;
 }
 
 .container > * {

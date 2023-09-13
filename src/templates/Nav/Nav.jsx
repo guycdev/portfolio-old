@@ -1,28 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import DesktopNav from "./DesktopNav";
 import styles from "./Nav.module.css";
-import NavItems from "./NavItems";
-import { NavLink } from "react-router-dom";
-import Heading from "../../components/Heading";
+import MobileNav from "./MobileNav";
 
 export default function Nav() {
-  function handleMouseEnter(e) {
-    e.currentTarget.classList.add(styles.hovered);
-  }
-  function handleMouseExit(e) {
-    e.currentTarget.classList.remove(styles.hovered);
-  }
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth <= 550);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth <= 550);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <header className={styles.navContainer}>
-      <NavLink
-        to=".."
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseExit}
-        className={`${styles.homeBtn}`}
-      >
-        <Heading content="GC" />
-      </NavLink>
-      <NavItems items={["About Me", "Projects", "Resume", "Get in Touch"]} />
+      {windowWidth ? <MobileNav /> : <DesktopNav />}
     </header>
   );
 }
