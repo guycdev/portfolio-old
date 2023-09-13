@@ -45,6 +45,22 @@ export default function ResumeMenu() {
       </li>
       <li>
         <NavLink
+          to="experience"
+          className={({ isActive }) => (isActive ? styles.active : null)}
+          style={({ isActive }) => {
+            return {
+              fontSize: isActive ? "2rem" : "",
+              marginLeft: isActive ? "1rem" : "",
+            };
+          }}
+          onMouseEnter={handleMouseOver}
+          onMouseLeave={handleMouseOver}
+        >
+          <Heading content="Experience" />
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="involvment"
           className={({ isActive }) => (isActive ? styles.active : null)}
           style={({ isActive }) => {

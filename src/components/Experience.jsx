@@ -2,9 +2,7 @@ import React from "react";
 import Heading from "./Heading";
 
 export default function Experience(props) {
-  const { experiences } = props;
-
-  console.log(experiences);
+  const { experiences, children } = props;
 
   const elementArr = experiences.map((experience, index) => {
     return (
@@ -28,6 +26,17 @@ export default function Experience(props) {
         <p className="location">
           <Heading content={experience.geo} />
         </p>
+        {experience.bullets && (
+          <ul className="bullet-list">
+            {experience.bullets.map((bullet, index) => {
+              return (
+                <li className="bullet" key={index}>
+                  <Heading content={bullet} />
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </div>
     );
   });

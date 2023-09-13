@@ -82,3 +82,11 @@
   justify-content: center;
   height: 100%;
 }
+
+.experienceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 40px;
+}

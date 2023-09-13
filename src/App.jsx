@@ -14,6 +14,7 @@ import Resume from "./sections/Resume/Resume";
 import Profile from "./sections/Resume/Profile";
 import Education from "./sections/Resume/Education";
 import Involvment from "./sections/Resume/Involvment";
+import Experience from "./sections/Resume/Experience";
 
 const route = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const route = createBrowserRouter(
       <Route path="/resume" element={<Resume />}>
         <Route index element={<Profile />} />
         <Route path="education" element={<Education />} />
+        <Route path="experience" element={<Experience />} />
         <Route path="involvment" element={<Involvment />} />
       </Route>
       <Route path="/get-in-touch" element={<Contact />} />

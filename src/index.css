@@ -350,3 +350,28 @@ input:focus {
   transition: all 0.1s;
   opacity: 0.075;
 }
+
+.bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+
+.bullet {
+  font-size: 0.8rem;
+  text-align: left;
+  position: relative;
+}
+
+.bullet::before {
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  content: " ";
+  position: absolute;
+  left: -15px;
+  top: 4px;
+  box-shadow: var(--box-shadow);
+}
