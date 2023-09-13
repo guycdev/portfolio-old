@@ -5,13 +5,12 @@ import { motion } from "framer-motion";
 import NavItems from "./NavItems";
 import { NavLink } from "react-router-dom";
 import styles from "./Nav.module.css";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 import Heading from "../../components/Heading";
 
 export default function MobileNav() {
-    const location = useLocation();
-
+  const location = useLocation();
 
   const navVariants = {
     open: { x: 0, opacity: 1 },
@@ -21,8 +20,8 @@ export default function MobileNav() {
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
-    const isOnIndexPage = location.pathname === '/';
-    const styleElement = document.createElement('style');
+    const isOnIndexPage = location.pathname === "/";
+    const styleElement = document.createElement("style");
 
     if (isOnIndexPage) {
       styleElement.innerHTML = `
@@ -31,17 +30,15 @@ export default function MobileNav() {
         }
       `;
       document.head.appendChild(styleElement);
-    }else{
-        styleElement.innerHTML = `
+    } else {
+      styleElement.innerHTML = `
         #root {
           height: 100% !important;
         }
       `;
       document.head.appendChild(styleElement);
     }
-
   }, [location.pathname]);
-};
 
   function handleClick() {
     setIsClicked((prev) => !prev);
