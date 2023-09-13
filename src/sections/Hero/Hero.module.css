@@ -168,6 +168,12 @@
   }
 }
 
+@media (max-width: 550px) {
+  .heroContainer {
+    margin: 2rem 0rem;
+  }
+}
+
 @media (max-width: 475px) {
   .container button {
     font-size: 0.7rem;
