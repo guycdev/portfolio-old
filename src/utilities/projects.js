@@ -20,7 +20,7 @@ const projects = [
     title: "Analog Designs",
     subheading: "Full-stack order management website for my design agency",
     descriptiveSubheading:
-      "80% reduction in manual communication time, managing 8 active users.",
+      "Session based authentication, deployed on AWS with NGINX",
 
     links: {
       github: "https://github.com/gcWDev/Analog-Designs",
