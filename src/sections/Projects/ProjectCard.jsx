@@ -27,7 +27,11 @@ export default function ProjectCard(props) {
           display: isActive ? "flex" : "none",
         }}
       >
-        <a href={project.links.live} target="_blank" className={styles.imgLink}>
+        <a
+          href={project.links.live || project.links.github}
+          target="_blank"
+          className={styles.imgLink}
+        >
           <img src={project.img} alt={project.title} />
           <div className={styles.projectInfoContainer}>
             <div>
