@@ -7,6 +7,43 @@
   border-radius: 10px;
 }
 
+.blob {
+  background-color: white;
+  height: 25vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--accent), var(--primary));
+  animation: rotate 20s infinite;
+  opacity: 0.6;
+  padding: 4rem;
+}
+
+.blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(12vmax);
+  left: 0px;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
 .heroContainer {
   position: relative;
 }

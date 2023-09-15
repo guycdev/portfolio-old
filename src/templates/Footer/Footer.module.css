@@ -3,13 +3,14 @@
 .footerContainer {
   display: flex;
   justify-content: flex-end;
+  z-index: 2;
 }
 
 .footerItemContainer {
   display: flex;
   gap: 15px;
   border-radius: 50px;
-  border: solid var(--background-hue);
+  border: 1px solid var(--background-hue);
   transition: all 0.3s ease-in-out;
 }
 
