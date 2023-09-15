@@ -148,14 +148,19 @@
   .menuContainer {
     padding: 1rem 0rem;
   }
+  .educationContainer {
+    display: flex;
+  }
 }
 
 @media (max-width: 490px) {
   .menuContainer {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
     gap: 20px;
     justify-content: space-evenly;
+  }
+  .menuContainer > *:last-child {
+    grid-column: 2/3;
   }
 }
