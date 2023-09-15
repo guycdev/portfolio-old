@@ -25,7 +25,7 @@ export default function Profile() {
         </p>
         <p className={styles.resumeSubheading}>
           <span>Proficient in React</span> and Node; pursuing a{" "}
-          <span>dual degree</span> in CS and finance.
+          <span>dual degree</span> in CS and Finance.
         </p>
         <p className={styles.resumeSubheading}>
           <span>Currently</span> searching for a{" "}
