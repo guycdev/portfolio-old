@@ -168,6 +168,10 @@
     -webkit-mask-position: 50% 30%;
     mask-position: 50% 30%;
   }
+  .blob,
+  .blur {
+    display: none;
+  }
 }
 
 @media (max-width: 850px) {

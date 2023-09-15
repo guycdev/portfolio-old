@@ -459,6 +459,12 @@ input:focus {
   }
 }
 
+@media (max-width: 1060px) {
+  .content-container {
+    position: unset;
+  }
+}
+
 @media (max-width: 840px) {
   .resume-marquee > div > * {
     max-width: 400px !important;
@@ -499,6 +505,7 @@ input:focus {
     height: unset;
     min-height: 100vh;
   }
+
   main,
   .content-container {
     min-height: 100vh;
