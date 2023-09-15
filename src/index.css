@@ -497,16 +497,13 @@ input:focus {
 @media (max-width: 550px) {
   .content-container {
     padding: 1rem;
+    min-height: 96.5svh;
   }
   .marquee-fixed-container {
     max-width: 200px !important;
   }
   #root {
     height: unset;
-    min-height: 100svh;
-  }
-  main {
-    min-height: 90%;
   }
 }
 
