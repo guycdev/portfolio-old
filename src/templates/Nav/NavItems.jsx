@@ -50,7 +50,7 @@ export default function NavItems(props) {
         height: "0px",
       }}
       animate={{
-        height: "100%",
+        height: "fit-content",
         transition: {
           delay: 0.3,
         },

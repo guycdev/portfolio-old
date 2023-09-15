@@ -51,31 +51,33 @@ export default function ProjectCard(props) {
             </div>
           </div>
         </a>
-        <p>{project.subheading}</p>
-        <SvgMarquee svgs={project.tech} />
-        <div className={styles.linkContainer}>
-          <a
-            href={project.links.github}
-            target="_blank"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseExit}
-          >
-            <div className="react-svg">
-              <ReactSVG src={github} />
-            </div>
-          </a>
-          {project.links.live && (
+        <div className={styles.projectInfo}>
+          <p>{project.subheading}</p>
+          <SvgMarquee svgs={project.tech} />
+          <div className={styles.linkContainer}>
             <a
-              href={project.links.live}
+              href={project.links.github}
               target="_blank"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseExit}
             >
               <div className="react-svg">
-                <ReactSVG src={globe} />
+                <ReactSVG src={github} />
               </div>
             </a>
-          )}
+            {project.links.live && (
+              <a
+                href={project.links.live}
+                target="_blank"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseExit}
+              >
+                <div className="react-svg">
+                  <ReactSVG src={globe} />
+                </div>
+              </a>
+            )}
+          </div>
         </div>
       </div>
     );
@@ -92,7 +94,7 @@ export default function ProjectCard(props) {
           delay: 0.4,
         },
       }}
-      className={styles.projectCard}
+      className={`card ${styles.projectCard}`}
     >
       {projectCardArr}
     </motion.div>

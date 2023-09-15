@@ -88,6 +88,21 @@
   gap: 40px;
 }
 
+@media (min-width: 1300px) {
+  .resumeContainer {
+    padding: 0rem 5rem;
+  }
+  .resumeContainer > div:last-child {
+    max-width: 1000px;
+  }
+  .resumeSubheading {
+    font-size: 1.2rem;
+  }
+  .resumeSubheading > span {
+    font-size: 1.4rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .resumeSubheading {
     font-size: 0.8rem;

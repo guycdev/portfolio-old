@@ -6,9 +6,9 @@ export default function Involvment() {
   const educationArr = [
     {
       duration: "Jan 2023 - Apr 2023",
-      type: "High Frequency Trading Hackathon",
+      type: "High Frequency Trading Competition",
       subject: "1st Place out of 38 participants",
-      experience: "Rotman School of Management",
+      experience: "Ted Rogers School of Management",
       geo: "Toronto, On, Canada",
     },
     {

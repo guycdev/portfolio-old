@@ -207,6 +207,12 @@
   background-color: var(--primary);
 }
 
+@media (min-width: 1300px) {
+  .contactFormContainer {
+    padding: 3rem;
+  }
+}
+
 @media (max-width: 1030px) {
   .accentBlob {
     opacity: 0.2;
