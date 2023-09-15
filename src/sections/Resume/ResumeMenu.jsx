@@ -40,7 +40,7 @@ export default function ResumeMenu() {
           onMouseEnter={handleMouseOver}
           onMouseLeave={handleMouseOver}
         >
-          <Heading content="Education" />
+          <Heading content="Education & Involvment" />
         </NavLink>
       </li>
       <li>
@@ -59,7 +59,7 @@ export default function ResumeMenu() {
           <Heading content="Experience" />
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink
           to="involvment"
           className={({ isActive }) => (isActive ? styles.active : null)}
@@ -74,7 +74,7 @@ export default function ResumeMenu() {
         >
           <Heading content="Involvment" />
         </NavLink>
-      </li>
+      </li> */}
     </ul>
   );
 }
