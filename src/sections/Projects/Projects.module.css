@@ -123,11 +123,12 @@
 
 .projectCard .tag {
   padding: 0.3rem 0.5rem;
-  border-radius: 10px;
-  background-color: var(--text);
+  border-radius: 50px;
+  background-color: var(--primary);
   color: var(--background);
   box-shadow: var(--box-shadow);
   font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .imgLink:hover img {
@@ -153,7 +154,7 @@
 }
 
 .projectCard .projectDescription {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--primary);
 }
 
@@ -210,6 +211,23 @@
   padding: 1rem;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
+}
+
+@media (min-width: 1540px) {
+  .imgLink {
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .projectsContainer {
+    padding: 0rem 5rem;
+  }
+  .projectsContainer > div:last-child {
+    max-width: 800px;
+  }
 }
 
 @media (max-width: 1060px) {
@@ -281,5 +299,13 @@
   }
   .projectsContainer {
     gap: 20px;
+  }
+}
+
+@media (max-height: 757px) and (min-width: 1540px) {
+  .projectCard img,
+  .projectInfoContainer {
+    width: 85%;
+    height: 85%;
   }
 }

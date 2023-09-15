@@ -17,6 +17,9 @@ export default function ProjectCard(props) {
     e.currentTarget.classList.remove(styles.hovered);
   }
 
+  console.log(window.innerHeight);
+  console.log(window.innerWidth);
+
   const projectCardArr = projects.map((project, index) => {
     const isActive = selectedProject == index;
 
