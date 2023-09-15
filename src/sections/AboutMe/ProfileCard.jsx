@@ -13,11 +13,22 @@ export default function ProfileCard() {
       onMouseLeave={() => setIsHovered((prev) => !prev)}
     >
       <div className={styles.specialCardContent}>
-        {isHovered && (
-          <div className={styles.specialCardHeadings}>
+        {isHovered ? (
+          <div className={styles.backCard}>
             <h3>
               <Heading content="hi im just testing for now" />
             </h3>
+          </div>
+        ) : (
+          <div className={styles.frontCard}>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+              <li>Point 3</li>
+              <li>Point 4</li>
+              <li>Point 5</li>
+              <li>Point 6</li>
+            </ul>
           </div>
         )}
         <a href="/Guy-Cohen-Resume.pdf" download>

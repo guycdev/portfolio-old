@@ -27,7 +27,12 @@ export default function CodeSnippet(props) {
       >
         <WindowController setWindow={setWindow} window={window} />
         {window == "code" ? (
-          <SyntaxHighlighter language="javascript" style={xonokai}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={xonokai}
+            showLineNumbers
+            wrapLines
+          >
             {feature.code}
           </SyntaxHighlighter>
         ) : (

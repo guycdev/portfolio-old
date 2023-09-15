@@ -89,9 +89,9 @@
 }
 
 @media (min-width: 1300px) {
-  .resumeContainer {
+  /* .resumeContainer {
     padding: 0rem 5rem;
-  }
+  } */
   .resumeContainer > div:last-child {
     max-width: 1000px;
   }

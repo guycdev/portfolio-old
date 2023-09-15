@@ -17,10 +17,7 @@ export default function AboutMeContent() {
         </p>
       </div>
       <p>
-        <Heading content="Currently finishing dual degrees in Computer Science and Finance while also utilizing the power of code to generate $362K in lifetime revenue, I'm dedicated to pushing the boundaries of my knowledge and filling any gaps in my skill set." />
-      </p>
-      <p>
-        <Heading content="I love working with React and Node and whenever I'm not trying to add cool visual components to my projects you'll find me playing basketball or at the gym." />
+        <Heading content="Currently finishing dual degrees in Computer Science and Finance while also utilizing the power of code to generate $362K in lifetime revenue, I'm dedicated to pushing the boundaries of my knowledge and filling any gaps in my skill set. I love working with React and Node and whenever I'm not trying to add cool visual components to my projects you'll find me playing basketball or at the gym." />
       </p>
     </div>
   );

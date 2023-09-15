@@ -26,12 +26,37 @@
   bottom: -30px;
 } */
 
+pre::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+pre::-webkit-scrollbar-track {
+  background: var(--accent-heavy);
+
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 100vw;
+  border: 0.1em solid var(--accent-heavy);
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  opacity: 0.5;
+}
+pre::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .container > * {
   flex: 1;
 }
 
 .container > *:first-child {
-  flex: 0.5;
+  flex: 0.75;
 }
 
 .miscContainer {
@@ -72,7 +97,7 @@
 .aboutMeContentContainer > h3,
 .aboutMeFeatureControllerContainer > div > h3,
 .windowControllerContainer > h3,
-.specialCardHeadings > h3 {
+.backCard > h3 {
   font-size: 1.4rem;
 }
 
@@ -135,11 +160,6 @@
 
 .subheading {
   font-size: 0.7rem;
-}
-
-.aboutMeFeatureHeadings {
-  border-bottom: 1px solid var(--background-hue);
-  padding-bottom: 10px;
 }
 
 .activeFeature {
@@ -257,7 +277,7 @@ video {
   .aboutMeContentContainer > h3,
   .aboutMeFeatureControllerContainer > div > h3,
   .windowControllerContainer > h3,
-  .specialCardHeadings > h3 {
+  .backCard > h3 {
     font-size: 1.1rem;
   }
 }
@@ -364,7 +384,7 @@ video {
   background-position: 100% 100%;
 }
 
-.specialCardHeadings {
+.backCard {
   position: relative;
   z-index: 2;
 }
@@ -378,4 +398,17 @@ video {
 
 .specialCard:hover a {
   opacity: 1;
+}
+
+.frontCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--background);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+.frontCard > ul {
+  list-style: none;
 }

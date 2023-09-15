@@ -223,7 +223,7 @@
 
 @media (min-width: 1300px) {
   .projectsContainer {
-    padding: 0rem 5rem;
+    /* padding: 0rem 5rem; */
   }
   .projectsContainer > div:last-child {
     max-width: 800px;

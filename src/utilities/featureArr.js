@@ -27,8 +27,7 @@ const featuresArr = [
 
   function anglePositining(event) {
     eyeRefs.forEach((eyeRef) => {
-      const eye = 
-      eyeRef.
+      const eye = eyeRef.
       current.
       getBoundingClientRect();
       const eyeCenterX = eye.left 
