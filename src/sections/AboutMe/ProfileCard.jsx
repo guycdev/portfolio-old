@@ -41,7 +41,6 @@ export default function ProfileCard() {
         <motion.img
           src={blob}
           alt="blobs"
-          className={styles.blob}
           initial="initial"
           animate="breathe"
           variants={breathingVariant}

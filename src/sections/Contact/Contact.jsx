@@ -3,6 +3,7 @@ import styles from "./Contact.module.css";
 import ContactForm from "./ContactForm";
 import InfoCard from "./InfoCard";
 import emailjs from "@emailjs/browser";
+import Cursor from "../../components/Cursor";
 
 export async function formAction(obj) {
   try {
