@@ -13,9 +13,8 @@ export default function ProjectMenu(props) {
   const projectsArr = projects.map((project, index) => {
     const isActive = selectedProject == index;
     return (
-      <a href={project.links.live} target="_blank">
+      <a href={project.links.live} key={index} target="_blank">
         <div
-          key={index}
           id={index}
           className={`${styles.project} ${isActive ? styles.active : ""}`}
           onMouseEnter={handleMouseOver}
