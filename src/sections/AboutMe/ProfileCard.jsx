@@ -25,6 +25,7 @@ export default function ProfileCard() {
           className={styles.frontCard}
           style={{
             backgroundColor: isHovered ? "transparent" : "var(--background)",
+            boxShadow: isHovered ? "none" : "var(--box-shadow)",
           }}
         >
           <CursorFollower />
@@ -32,13 +33,24 @@ export default function ProfileCard() {
               <Heading content="I like building fun and unique UI elements" />
             </h3> */}
           <em>
-            <Heading content="Hover me to get to know me better" />
+            <Heading
+              content={
+                isHovered
+                  ? "I like to make cool UI elemnts"
+                  : "Hover me to get to know me better"
+              }
+            />
           </em>
         </div>
-        {/* )} */}
-        <a href="/Guy-Cohen-Resume.pdf" download>
-          <Button style="primary-btn" text="Download CV" />
-        </a>
+        {isHovered && (
+          <a
+            href="/Guy-Cohen-Resume.pdf"
+            download
+            className={styles.resumeContainer}
+          >
+            <Button style="primary-btn" text="Download CV" />
+          </a>
+        )}
       </div>
     </div>
   );

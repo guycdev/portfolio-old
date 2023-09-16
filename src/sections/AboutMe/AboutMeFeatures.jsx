@@ -13,6 +13,7 @@ export default function AboutMeFeatures(props) {
           activeFeature == index ? styles.activeFeature : styles.feature
         }
         onMouseEnter={() => setFeature(index)}
+        key={index}
       >
         <div className="react-svg">
           <ReactSVG src={feature.icon} />
