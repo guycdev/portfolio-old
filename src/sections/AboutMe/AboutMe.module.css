@@ -442,13 +442,22 @@ video {
 
 .frontCard {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   padding: 1rem;
   background-color: var(--background);
   border-radius: 10px;
   box-shadow: var(--box-shadow);
+  transition: all 0.3s;
 }
 .frontCard > ul {
   list-style: none;
+}
+
+.frontCard > em span {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: var(--text);
 }

@@ -14,17 +14,28 @@ export default function ProfileCard() {
       onMouseLeave={() => setIsHovered((prev) => !prev)}
     >
       <div className={styles.specialCardContent}>
-        {isHovered ? (
+        {/* {isHovered ? (
           <div className={styles.backCard}>
             <h3>
               <Heading content="hi im just testing for now" />
             </h3>
           </div>
-        ) : (
-          <div className={styles.frontCard}>
-            <CursorFollower />
-          </div>
-        )}
+        ) : ( */}
+        <div
+          className={styles.frontCard}
+          style={{
+            backgroundColor: isHovered ? "transparent" : "var(--background)",
+          }}
+        >
+          <CursorFollower />
+          {/* <h3>
+              <Heading content="I like building fun and unique UI elements" />
+            </h3> */}
+          <em>
+            <Heading content="Hover me to get to know me better" />
+          </em>
+        </div>
+        {/* )} */}
         <a href="/Guy-Cohen-Resume.pdf" download>
           <Button style="primary-btn" text="Download CV" />
         </a>

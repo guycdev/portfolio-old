@@ -24,10 +24,10 @@ export default function CursorFollower() {
       let pupilX = eyeRadius * Math.cos(angle) * eyeRadius;
       let pupilY = eyeRadius * Math.sin(angle) * eyeRadius;
 
-      pupilX += 7.5; // Adjusting the 10px offset
-      pupilY += 7.5; // No adjustment needed for Y coordinate
+      pupilX += 7.5;
+      pupilY += 7.5;
 
-      const rotation = angle * (180 / Math.PI); // Convert to degrees and add 45
+      const rotation = angle * (180 / Math.PI);
 
       setPupilStyle({
         left: pupilX + "px",
