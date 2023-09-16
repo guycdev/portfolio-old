@@ -444,7 +444,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--background);
   border-radius: 10px;
   box-shadow: var(--box-shadow);

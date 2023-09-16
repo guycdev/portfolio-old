@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./AboutMe.module.css";
 import Heading from "../../components/Heading";
 import Button from "../../components/Button";
+import CursorFollower from "../../components/CursorFollower";
 
 export default function ProfileCard() {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,14 +22,7 @@ export default function ProfileCard() {
           </div>
         ) : (
           <div className={styles.frontCard}>
-            <ul>
-              <li>Point 1</li>
-              <li>Point 2</li>
-              <li>Point 3</li>
-              <li>Point 4</li>
-              <li>Point 5</li>
-              <li>Point 6</li>
-            </ul>
+            <CursorFollower />
           </div>
         )}
         <a href="/Guy-Cohen-Resume.pdf" download>
