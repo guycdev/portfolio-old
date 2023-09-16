@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { synthwave84 } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { xonokai } from "react-syntax-highlighter/dist/esm/styles/prism";
 import styles from "./AboutMe.module.css";
 import { motion } from "framer-motion";
 import WindowController from "./WindowController";
@@ -27,7 +27,12 @@ export default function CodeSnippet(props) {
       >
         <WindowController setWindow={setWindow} window={window} />
         {window == "code" ? (
-          <SyntaxHighlighter language="javascript" style={synthwave84}>
+          <SyntaxHighlighter
+            language="javascript"
+            style={xonokai}
+            showLineNumbers
+            wrapLines
+          >
             {feature.code}
           </SyntaxHighlighter>
         ) : (

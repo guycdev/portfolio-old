@@ -26,12 +26,62 @@
   bottom: -30px;
 } */
 
+pre::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+pre::-webkit-scrollbar-track {
+  background: var(--accent-heavy);
+
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 100vw;
+  border: 0.1em solid var(--accent-heavy);
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  opacity: 0.5;
+}
+pre::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.miscContainer > *::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+.miscContainer > *::-webkit-scrollbar-track {
+  background: var(--primary);
+
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.miscContainer > *::-webkit-scrollbar-thumb {
+  background: var(--card-bg);
+  border-radius: 100vw;
+  border: 0.1em solid var(--primary);
+}
+
+.miscContainer > *::-webkit-scrollbar-thumb:hover {
+  opacity: 0.5;
+}
+.miscContainer > *::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .container > * {
   flex: 1;
 }
 
 .container > *:first-child {
-  flex: 0.5;
+  flex: 0.75;
 }
 
 .miscContainer {
@@ -55,7 +105,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px !important;
+  gap: 5px !important;
   flex: 1;
   overflow: auto;
   justify-content: space-between;
@@ -71,7 +121,8 @@
 
 .aboutMeContentContainer > h3,
 .aboutMeFeatureControllerContainer > div > h3,
-.windowControllerContainer > h3 {
+.windowControllerContainer > h3,
+.backCard > h3 {
   font-size: 1.4rem;
 }
 
@@ -134,11 +185,6 @@
 
 .subheading {
   font-size: 0.7rem;
-}
-
-.aboutMeFeatureHeadings {
-  border-bottom: 1px solid var(--background-hue);
-  padding-bottom: 10px;
 }
 
 .activeFeature {
@@ -210,7 +256,7 @@ video {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  max-width: 585px;
+  max-width: 435px;
 }
 
 .linkContainer {
@@ -227,6 +273,103 @@ video {
   padding: 0.5rem 1rem;
   border-radius: 50px;
   transition: all 0.3s;
+}
+
+.specialCard {
+  padding: 0.3rem !important;
+  position: relative;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+}
+
+.specialCardContent {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 8%,
+    transparent 8%
+  );
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: calc(100%);
+  padding: 5vmin;
+  position: relative;
+  transition: background-position 350ms ease;
+  width: calc(100%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.specialCard:hover > .specialCardContent {
+  background-position: -40% -40%;
+}
+
+.specialCard::before {
+  background: linear-gradient(
+    130deg,
+    transparent 0% 33%,
+    var(--background) 66%,
+    var(--accent) 83.5%,
+    var(--primary) 100%
+  );
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  transition: background-position 350ms ease, transform 350ms ease;
+  border-radius: 10px;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.specialCard:hover::before {
+  background-position: 100% 100%;
+}
+
+.backCard {
+  position: relative;
+  z-index: 2;
+}
+
+.specialCard a {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.specialCard:hover a {
+  opacity: 1;
+}
+
+.frontCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: opacity 0.35s;
+}
+.frontCard > ul {
+  list-style: none;
+}
+
+.frontCard > em span {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: var(--text);
+}
+
+.resumeContainer > button {
+  font-size: 0.8rem;
 }
 
 @media (max-width: 1175px) {
@@ -255,7 +398,8 @@ video {
 @media (max-width: 1075px) {
   .aboutMeContentContainer > h3,
   .aboutMeFeatureControllerContainer > div > h3,
-  .windowControllerContainer > h3 {
+  .windowControllerContainer > h3,
+  .backCard > h3 {
     font-size: 1.1rem;
   }
 }
@@ -273,6 +417,12 @@ video {
   }
 }
 
+@media (width<=1010px) {
+  .specialCardContent {
+    padding: 1vmin;
+  }
+}
+
 @media (max-width: 950px) {
   pre {
     width: 250px;
@@ -283,20 +433,45 @@ video {
 }
 
 @media (max-width: 900px) {
-  .aboutMeProfileContainer {
-    display: none;
-  }
   .container > * {
     flex: 1;
   }
   pre {
-    width: 300px;
+    width: 400px;
+  }
+  .specialCard {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  pre {
+    width: 250px;
   }
 }
 
 @media (max-width: 700px) {
+  .specialCard {
+    display: unset;
+  }
+
   .container {
     flex-direction: column;
+  }
+
+  .codeSnippetContainer > div {
+    align-items: center;
+  }
+
+  .windowControllerContainer {
+    width: 100%;
+  }
+  .linkContainer {
+    width: 100%;
+  }
+
+  .aboutMeContentContainer {
+    gap: 10px !important;
   }
 
   pre {

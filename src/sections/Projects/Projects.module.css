@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  height: 100%;
 }
 
 /* .projectsContainer > *:nth-child(2)::before {
@@ -172,6 +173,10 @@
   border: 1px solid var(--background-hue);
   border-radius: 50px;
 }
+.projectCard a {
+  display: flex;
+  justify-content: center;
+}
 
 .linkContainer > a > div {
   transition: all 0.3s;
@@ -222,9 +227,6 @@
 }
 
 @media (min-width: 1300px) {
-  .projectsContainer {
-    padding: 0rem 5rem;
-  }
   .projectsContainer > div:last-child {
     max-width: 800px;
   }
@@ -250,15 +252,18 @@
   }
 }
 
+@media (width<=810px) {
+  .imgLink {
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 760px) {
   .projectsContainer {
     flex-direction: column;
   }
   .projectMenuContainer {
     flex-direction: row;
-  }
-  .projectInfoContainer {
-    display: none;
   }
 
   .projectCard p {
@@ -302,7 +307,7 @@
   }
 }
 
-@media (max-height: 757px) and (min-width: 1540px) {
+@media (max-height: 757px) and (min-width: 1370px) {
   .projectCard img,
   .projectInfoContainer {
     width: 85%;

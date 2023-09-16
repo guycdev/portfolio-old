@@ -8,7 +8,9 @@ export default function HomeLayout() {
     <main>
       <div className="content-container">
         <Nav />
-        <Outlet />
+        <div className="main-container">
+          <Outlet />
+        </div>
         <Footer />
       </div>
     </main>
