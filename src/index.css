@@ -468,7 +468,7 @@ input:focus {
   width: 7.5px;
   height: 7.5px;
   border-radius: 50%;
-  background-color: var(--primary);
+  background-color: var(--accent);
   content: " ";
   position: absolute;
   left: -15px;
