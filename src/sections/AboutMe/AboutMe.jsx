@@ -11,6 +11,7 @@ export default function AboutMe() {
 
   return (
     <section className={styles.container}>
+      {/* change order of this page */}
       <ProfileCard />
       <div className={styles.miscContainer}>
         <AboutMeContent />

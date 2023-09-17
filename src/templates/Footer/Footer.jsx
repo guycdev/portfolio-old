@@ -39,7 +39,7 @@ export default function Footer() {
         animate={{
           opacity: 1,
           transition: {
-            delay: 0.3 + index / linksArr.length,
+            delay: 1.3 + index / linksArr.length,
           },
         }}
         key={index}
@@ -52,19 +52,30 @@ export default function Footer() {
   });
 
   return (
-    <footer className={styles.footerContainer}>
+    <motion.footer
+      className={styles.footerContainer}
+      initial={{
+        y: 500,
+      }}
+      animate={{
+        y: 0,
+        transition: {
+          duration: 1,
+        },
+      }}
+    >
       <motion.div
         className={styles.footerItemContainer}
         initial={{ height: "0px" }} // Include units here
         animate={{
           height: "100%",
           transition: {
-            delay: 0.2,
+            delay: 0.5,
           },
         }}
       >
         {elementArr}
       </motion.div>
-    </footer>
+    </motion.footer>
   );
 }

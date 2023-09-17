@@ -27,7 +27,8 @@ export default function WordAnimation(props) {
         animate={{
           opacity: 1,
           transition: {
-            delay: 1,
+            delay: 0.5,
+            duration: 0.5,
           },
         }}
       >

@@ -11,16 +11,14 @@ export default function Heading(props) {
       <motion.span
         key={index}
         initial={{
-          x: -500,
           opacity: 0,
         }}
         animate={{
-          x: 0,
           opacity: 1,
           transition: {
             duration: 1.3,
             delay: index / letters.length,
-            type: "spring",
+            type: "bounce",
           },
         }}
       >

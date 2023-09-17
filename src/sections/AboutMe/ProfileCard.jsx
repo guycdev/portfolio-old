@@ -3,6 +3,7 @@ import styles from "./AboutMe.module.css";
 import Heading from "../../components/Heading";
 import Button from "../../components/Button";
 import CursorFollower from "../../components/CursorFollower";
+import { motion } from "framer-motion";
 
 export default function ProfileCard() {
   const [isHovered, setIsHovered] = useState(false);
@@ -29,9 +30,6 @@ export default function ProfileCard() {
           }}
         >
           <CursorFollower />
-          {/* <h3>
-              <Heading content="I like building fun and unique UI elements" />
-            </h3> */}
           <em>
             <Heading
               content={
@@ -43,13 +41,22 @@ export default function ProfileCard() {
           </em>
         </div>
         {isHovered && (
-          <a
+          <motion.a
             href="/Guy-Cohen-Resume.pdf"
             download
             className={styles.resumeContainer}
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+              transition: {
+                delay: 0.3,
+              },
+            }}
           >
             <Button style="primary-btn" text="Download CV" />
-          </a>
+          </motion.a>
         )}
       </div>
     </div>

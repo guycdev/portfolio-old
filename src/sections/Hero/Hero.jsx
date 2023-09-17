@@ -2,7 +2,6 @@ import React from "react";
 import HeroCta from "./HeroCta";
 import styles from "./Hero.module.css";
 import overlays from "../../utilities/overlayArr.js";
-// import WordAnimationMaskSelector from "./WordAnimationMaskSelector";
 import WordAnimationParent from "./WordAnimationParent";
 import Cursor from "../../components/Cursor";
 
@@ -13,7 +12,6 @@ export default function Hero() {
       <HeroCta />
       <div className={styles.wordAnimationContainer}>
         <WordAnimationParent overlays={overlays} />
-        {/* <WordAnimationMaskSelector overlays={overlays} /> */}
       </div>
     </section>
   );

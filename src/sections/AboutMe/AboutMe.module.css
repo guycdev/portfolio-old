@@ -479,3 +479,9 @@ video {
     width: 100%;
   }
 }
+
+@media (width<=550px) {
+  video {
+    margin: 0.75rem 0rem;
+  }
+}

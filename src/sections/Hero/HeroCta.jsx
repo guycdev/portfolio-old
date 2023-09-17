@@ -3,7 +3,7 @@ import styles from "./Hero.module.css";
 import Heading from "../../components/Heading";
 import Button from "../../components/Button";
 import Typewriter from "typewriter-effect";
-import { motion } from "framer-motion";
+import { motion, spring } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function HeroCta() {
