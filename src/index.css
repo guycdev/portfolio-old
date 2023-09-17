@@ -165,6 +165,7 @@ main {
   position: absolute;
   backdrop-filter: blur(12vmax);
   left: 0px;
+  border-radius: 10px;
 }
 
 pre {
@@ -631,13 +632,17 @@ input:focus {
 @media (max-width: 550px) {
   .content-container {
     padding: 1rem;
-    min-height: 96.5svh;
+    position: unset;
   }
   .marquee-fixed-container {
     max-width: 200px !important;
   }
   #root {
     height: unset;
+  }
+  .blur,
+  .blob {
+    display: none;
   }
 }
 
