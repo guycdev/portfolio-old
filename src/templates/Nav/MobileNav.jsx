@@ -25,7 +25,10 @@ export default function MobileNav() {
       <div
         className="burger-icon"
         onClick={handleClick}
-        style={{ opacity: isClicked ? "0" : "1" }}
+        style={{
+          opacity: isClicked ? "0" : "1",
+          pointerEvents: isClicked ? "none" : "unset",
+        }}
       >
         <div className="burger-line"></div>
         <div className="burger-line"></div>
