@@ -22,9 +22,6 @@ export default function MobileNav() {
 
   return (
     <>
-      <NavLink to=".." className={`${styles.homeBtn}`}>
-        <Heading content="GC" />
-      </NavLink>
       <div
         className="burger-icon"
         onClick={handleClick}
@@ -34,6 +31,9 @@ export default function MobileNav() {
         <div className="burger-line"></div>
         <div className="burger-line"></div>
       </div>
+      <NavLink to=".." className={`${styles.homeBtn}`}>
+        <Heading content="GC" />
+      </NavLink>
       <motion.nav
         className={styles.mobileNav}
         animate={isClicked ? "open" : "closed"}
