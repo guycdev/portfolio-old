@@ -11,7 +11,7 @@ const featuresArr = [
     video: minions,
     links: [
       "https://github.com/gcWDev/Analog-Designs/blob/main/frontend/src/pages/NewAuth/AuthHeroCard.jsx",
-      "http://ec2-18-215-255-171.compute-1.amazonaws.com/account",
+      "http://analogdesigns.net/account",
     ],
     code: `export default function CursorFollower() {
   const [pupilStyle, setPupilStyle] = 
@@ -114,7 +114,7 @@ const featuresArr = [
     video: progressBar,
     links: [
       "https://github.com/gcWDev/Analog-Designs/blob/main/frontend/src/components/ProgressBar.jsx",
-      "http://ec2-18-215-255-171.compute-1.amazonaws.com/dashboard/order",
+      "http://analogdesigns.net/dashboard/order",
     ],
     code: `export default function ProgressBar(props) {
       const { formData, formFieldCount } = props;
@@ -188,7 +188,7 @@ const featuresArr = [
     video: video,
     links: [
       "https://github.com/gcWDev/Analog-Designs/tree/main/frontend/src/pages/Home/VideoObject",
-      "http://ec2-18-215-255-171.compute-1.amazonaws.com/#demos",
+      "http://analogdesigns.net/#demos",
     ],
     code: `export default function VideoPlayer(props) {
       const { video } = props;
@@ -275,7 +275,7 @@ const featuresArr = [
     video: total,
     links: [
       "https://github.com/gcWDev/Analog-Designs/blob/main/frontend/src/pages/Dashboard/DashboardOrder/OrderSummaryChart.jsx",
-      "http://ec2-18-215-255-171.compute-1.amazonaws.com/dashboard/order",
+      "http://analogdesigns.net/dashboard/order",
     ],
     code: `export default function Calendar(props) {
       const { 

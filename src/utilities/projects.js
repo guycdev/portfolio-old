@@ -24,7 +24,7 @@ const projects = [
 
     links: {
       github: "https://github.com/gcWDev/Analog-Designs",
-      live: "http://ec2-18-215-255-171.compute-1.amazonaws.com/#home",
+      live: "http://analogdesigns.net/",
     },
     img: analogDesigns,
     tech: [
