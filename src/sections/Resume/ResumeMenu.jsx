@@ -40,7 +40,7 @@ export default function ResumeMenu() {
           onMouseEnter={handleMouseOver}
           onMouseLeave={handleMouseOver}
         >
-          <Heading content="Education & Involvment" />
+          <Heading content="Education & Involvement" />
         </NavLink>
       </li>
       <li>
