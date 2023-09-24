@@ -292,6 +292,10 @@
     display: flex;
     justify-content: center;
   }
+
+  .imgLink {
+    pointer-events: none;
+  }
 }
 
 @media (max-width: 580px) {
