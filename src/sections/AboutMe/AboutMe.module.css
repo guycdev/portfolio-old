@@ -101,6 +101,12 @@ pre::-webkit-scrollbar-corner {
   align-items: center;
 }
 
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+
 .aboutMeContentContainer {
   display: flex;
   flex-direction: column;
@@ -119,14 +125,14 @@ pre::-webkit-scrollbar-corner {
   gap: 10px !important;
 }
 
-.aboutMeContentContainer > h3,
+.aboutMeContentContainer > div > h3,
 .aboutMeFeatureControllerContainer > div > h3,
 .windowControllerContainer > h3,
 .backCard > h3 {
   font-size: 1.4rem;
 }
 
-.aboutMeContentContainer > h3 *,
+.aboutMeContentContainer > div > h3 *,
 .aboutMeFeatureControllerContainer > div > h3 * {
   color: var(--primary);
 }
@@ -372,6 +378,18 @@ video {
   font-size: 0.8rem;
 }
 
+@media (min-width: 1400px) {
+  .aboutMeContentContainer > p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .aboutMeContentContainer > p {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 1175px) {
   /* .aboutMeProfileContainer {
     flex: 0.5;
@@ -396,7 +414,7 @@ video {
 }
 
 @media (max-width: 1075px) {
-  .aboutMeContentContainer > h3,
+  .aboutMeContentContainer > div > h3,
   .aboutMeFeatureControllerContainer > div > h3,
   .windowControllerContainer > h3,
   .backCard > h3 {

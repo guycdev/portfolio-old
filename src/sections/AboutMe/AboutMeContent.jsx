@@ -7,15 +7,18 @@ import Heading from "../../components/Heading";
 export default function AboutMeContent() {
   return (
     <div className={`card ${styles.aboutMeContentContainer}`}>
-      <h3>
-        <Heading content="About Me" />
-      </h3>
-      <div className={`react-svg ${styles.workStatusContainer}`}>
-        <ReactSVG src={checkMark} />
-        <p>
-          <Heading content="Open to Work" />
-        </p>
+      <div className={styles.headingContainer}>
+        <h3>
+          <Heading content="About Me" />
+        </h3>
+        <div className={`react-svg ${styles.workStatusContainer}`}>
+          <ReactSVG src={checkMark} />
+          <p>
+            <Heading content="Open to Work" />
+          </p>
+        </div>
       </div>
+
       <p>
         <Heading content="I'm Guy, an entrepenurial web developer always looking to undertake new ventures and grow my skill set. Between 2020 - 2022 I ran a retail arbitrage / automaiton business, and currently I run a web agency tailored towards mortgage broakers." />
         <br />
