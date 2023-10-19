@@ -386,7 +386,7 @@ video {
 
 @media (min-width: 1500px) {
   .aboutMeContentContainer > p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
