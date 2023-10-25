@@ -261,18 +261,19 @@
 @media (max-width: 760px) {
   .projectsContainer {
     flex-direction: column;
+    height: 81vh;
   }
   .projectMenuContainer {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
   }
 
-  .projectCard p {
-    width: 75%;
-  }
-
-  .projectCard img {
-    width: 75%;
-    height: 75%;
+  .projectCard > div:first-child {
+    justify-content: space-between;
+    height: 100%;
   }
 
   .projectCard > div:first-child > a {
@@ -300,11 +301,9 @@
 
 @media (max-width: 580px) {
   .projectMenuContainer {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .projectsContainer {
     gap: 20px;

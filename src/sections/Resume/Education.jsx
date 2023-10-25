@@ -22,6 +22,13 @@ export default function Education() {
 
   const involvmentArr = [
     {
+      duration: "Oct 2023",
+      type: "Oregon State Hackathon",
+      subject: "Deployed full stack web app within two days",
+      experience: "Oregon State University",
+      geo: "Toronto, ON, Canada",
+    },
+    {
       duration: "Jan 2023 - Apr 2023",
       type: "High Frequency Trading Competition",
       subject: "1st Place out of 38 participants",
@@ -33,7 +40,7 @@ export default function Education() {
       type: "SMIF Analyst",
       subject: "Oversaw the allocation of a $500K portfolio",
       experience: "Ted Rogers School of Management",
-      geo: "Toronto, ON, Canada",
+      geo: "Corvallis, OR, United States",
     },
   ];
 
