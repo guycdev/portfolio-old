@@ -89,7 +89,7 @@ const projects = [
     title: "ClassCircles",
     subheading:
       "Full-stack hackathon project for students to find intresting student groups",
-    descriptiveSubheading: "Developed within a two day time frame",
+    descriptiveSubheading: "Developed in two days",
 
     links: {
       github: "https://github.com/gcWDev/ClassCircles",

@@ -24,7 +24,7 @@ export default function Education() {
     {
       duration: "Oct 2023",
       type: "Oregon State Hackathon",
-      subject: "Deployed full stack web app within two days",
+      subject: "Deployed a full stack web app in two days",
       experience: "Oregon State University",
       geo: "Toronto, ON, Canada",
     },
