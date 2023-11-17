@@ -33,7 +33,7 @@ export default function Education() {
       type: "High Frequency Trading Competition",
       subject: "1st Place out of 38 participants",
       experience: "Ted Rogers School of Management",
-      geo: "Toronto, ON, Canada",
+      geo: "Corvallis, OR, United States",
     },
     {
       duration: "May 2021 - Aug 2021",
