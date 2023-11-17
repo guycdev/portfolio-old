@@ -26,14 +26,14 @@ export default function Education() {
       type: "Oregon State Hackathon",
       subject: "Deployed a full stack web app in two days",
       experience: "Oregon State University",
-      geo: "Toronto, ON, Canada",
+      geo: "Corvallis, OR, United States",
     },
     {
       duration: "Jan 2023 - Apr 2023",
       type: "High Frequency Trading Competition",
       subject: "1st Place out of 38 participants",
       experience: "Ted Rogers School of Management",
-      geo: "Corvallis, OR, United States",
+      geo: "Toronto, ON, Canada",
     },
     {
       duration: "May 2021 - Aug 2021",
