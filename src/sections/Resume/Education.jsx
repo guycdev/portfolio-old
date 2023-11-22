@@ -22,16 +22,23 @@ export default function Education() {
 
   const involvmentArr = [
     {
+      duration: "Nov 2023",
+      type: "Google Hacks x OSU Hackathon",
+      subject: "Full stack crowdsourcing survival map",
+      experience: "Oregon State University",
+      geo: "Corvallis, OR, United States",
+    },
+    {
       duration: "Oct 2023",
       type: "Oregon State Hackathon",
-      subject: "Deployed a full stack web app in two days",
+      subject: "Full stack student group finder",
       experience: "Oregon State University",
       geo: "Corvallis, OR, United States",
     },
     {
       duration: "Jan 2023 - Apr 2023",
       type: "High Frequency Trading Competition",
-      subject: "1st Place out of 38 participants",
+      subject: "High frequency AI trading bot",
       experience: "Ted Rogers School of Management",
       geo: "Toronto, ON, Canada",
     },

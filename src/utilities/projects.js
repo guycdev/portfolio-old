@@ -16,6 +16,7 @@ import selenium from "../assets/tech/selenium.svg";
 import js from "../assets/overlays/js.svg";
 import bootstrap from "../assets/overlays/bootstrap.svg";
 import html from "../assets/tech/html.svg";
+import outbreak from "../assets/projects/outbreak.png";
 
 const projects = [
   {
@@ -83,6 +84,56 @@ const projects = [
       { logo: python, name: "Python" },
       { logo: selenium, name: "Selenium" },
       { logo: css, name: "CSS" },
+    ],
+  },
+  {
+    title: "Outbreak Navigator",
+    subheading:
+      "Real-time, crowdsourced map app to safely locate essentials and steer clear of danger zones in crises.",
+    descriptiveSubheading:
+      "Utilizes the Google Maps, Places, and Geocoding APIs for real time location fetching.",
+
+    links: {
+      github: "https://github.com/gcWDev/outbreak-navigator",
+    },
+    img: outbreak,
+    tech: [
+      {
+        logo: js,
+        name: "Javascript",
+      },
+      {
+        logo: react,
+        name: "React",
+      },
+      {
+        logo: node,
+        name: "NodeJs",
+      },
+      {
+        logo: bootstrap,
+        name: "Bootsstrap",
+      },
+      {
+        logo: css,
+        name: "CSS",
+      },
+      {
+        logo: html,
+        name: "HTML",
+      },
+      {
+        logo: mysql,
+        name: "MySql",
+      },
+      {
+        logo: git,
+        name: "Git",
+      },
+      {
+        logo: figma,
+        name: "Figma",
+      },
     ],
   },
   {
