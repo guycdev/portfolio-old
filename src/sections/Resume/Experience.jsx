@@ -14,7 +14,7 @@ export default function Experiences() {
         "Engineered a CRUD Node API, reducing communication time by 80%.",
         "Designed modular UI for easy theme swaps for future projects.",
         "Learned about db security, and responsive design.",
-        "Managed 14 projects to date.",
+        "Managed 6 projects to date.",
       ],
     },
     {
