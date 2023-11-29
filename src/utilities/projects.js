@@ -74,7 +74,7 @@ const projects = [
     subheading:
       "Suite of web scrapers / automation pool used for retail arbitrage",
     descriptiveSubheading:
-      "Generated $350K in lifetime revenue, automated inventory worth $40K.",
+      "Utilized proxy support to make scripts more robust.",
 
     links: {
       github: "https://github.com/gcWDev/snkrs_solutions_suite",
