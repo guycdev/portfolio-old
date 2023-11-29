@@ -73,8 +73,7 @@ const projects = [
     title: "SNKRS Solutions",
     subheading:
       "Suite of web scrapers / automation pool used for retail arbitrage",
-    descriptiveSubheading:
-      "Utilized proxy support to make scripts more robust.",
+    descriptiveSubheading: "Utilized proxy support to make scripts more robust",
 
     links: {
       github: "https://github.com/gcWDev/snkrs_solutions_suite",
@@ -89,9 +88,9 @@ const projects = [
   {
     title: "Outbreak Navigator",
     subheading:
-      "Real-time, crowdsourced map app to safely locate essentials and steer clear of danger zones in crises.",
+      "Real-time, crowdsourced map app to safely locate essentials and steer clear of danger zones in crises",
     descriptiveSubheading:
-      "Utilizes the Google Maps, Places, and Geocoding APIs for real time location fetching.",
+      "Utilizes the Google Maps, Places, and Geocoding APIs for real time location fetching",
 
     links: {
       github: "https://github.com/gcWDev/outbreak-navigator",
@@ -191,7 +190,7 @@ const projects = [
     subheading:
       "Arbitrage trading bot used for the RIT high frequency trading platform",
     descriptiveSubheading:
-      "Got 1st place by outperforming 38 participants, achieved a P/L differential of $100K above mean.",
+      "Got 1st place by outperforming 38 participants, achieved a P/L differential of $100K above mean",
 
     links: {
       github: "https://github.com/gcWDev/HFT-Case-Comp-case-1-2",
