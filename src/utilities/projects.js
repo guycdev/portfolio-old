@@ -203,25 +203,25 @@ const projects = [
       { logo: git, name: "Git" },
     ],
   },
-  {
-    title: "Quizical Quiz App",
-    subheading:
-      "Dynamic quiz app with user controlled category, difficulty, and type",
-    descriptiveSubheading:
-      "Implemented dynamic user settings for a personalized quiz experience.",
-    links: {
-      github: "https://github.com/gcWDev/Quizzical",
-      live: "https://dancing-douhua-4d4ac1.netlify.app/",
-    },
-    img: quizzical,
-    tech: [
-      { logo: js, name: "Javascript" },
-      { logo: react, name: "React" },
-      { logo: css, name: "CSS" },
-      { logo: git, name: "Git" },
-      { logo: figma, name: "Figma" },
-    ],
-  },
+  // {
+  //   title: "Quizical Quiz App",
+  //   subheading:
+  //     "Dynamic quiz app with user controlled category, difficulty, and type",
+  //   descriptiveSubheading:
+  //     "Implemented dynamic user settings for a personalized quiz experience.",
+  //   links: {
+  //     github: "https://github.com/gcWDev/Quizzical",
+  //     live: "https://dancing-douhua-4d4ac1.netlify.app/",
+  //   },
+  //   img: quizzical,
+  //   tech: [
+  //     { logo: js, name: "Javascript" },
+  //     { logo: react, name: "React" },
+  //     { logo: css, name: "CSS" },
+  //     { logo: git, name: "Git" },
+  //     { logo: figma, name: "Figma" },
+  //   ],
+  // },
 ];
 
 export default projects;
