@@ -35,7 +35,7 @@ export default function ProfileCard() {
               content={
                 isHovered
                   ? "I like to make cool UI elemnts"
-                  : "Hover me to get to know me better"
+                  : "Hover for official CV"
               }
             />
           </em>
