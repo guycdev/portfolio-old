@@ -17,6 +17,7 @@ import js from "../assets/overlays/js.svg";
 import bootstrap from "../assets/overlays/bootstrap.svg";
 import html from "../assets/tech/html.svg";
 import outbreak from "../assets/projects/outbreak.png";
+import on from "../assets/projects/on.png";
 
 const projects = [
   {
@@ -90,12 +91,12 @@ const projects = [
     subheading:
       "Real-time, crowdsourced map app to safely locate essentials and steer clear of danger zones in crises",
     descriptiveSubheading:
-      "Utilizes the Google Maps, Places, and Geocoding APIs for real time location fetching",
+      "Placed 1st out of 77 participants by utilizing various Google Maps APIs",
 
     links: {
       github: "https://github.com/gcWDev/outbreak-navigator",
     },
-    img: outbreak,
+    img: on,
     tech: [
       {
         logo: js,
