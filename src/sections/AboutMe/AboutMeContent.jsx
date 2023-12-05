@@ -20,7 +20,7 @@ export default function AboutMeContent() {
       </div>
 
       <p>
-        <Heading content="I'm Guy, an entrepenurial web developer always looking to undertake new ventures and grow my skill set. Between 2020 - 2022 I ran a retail arbitrage / automaiton business, and currently I run a web agency tailored towards mortgage broakers." />
+        <Heading content="I'm Guy, an entrepenurial web developer always looking to undertake new ventures and grow my skill set. Between 2020 - 2022 I ran a retail arbitrage / automaiton business, and currently I run a web agency tailored towards mortgage brokers." />
         <br />
         <Heading content="In addition to my hands-on experience, I'm actively pursuing dual degrees in Computer Science and Finance. The two domains synergise to give me the growth mindset and big picture view required to succeed on your development team." />
       </p>
