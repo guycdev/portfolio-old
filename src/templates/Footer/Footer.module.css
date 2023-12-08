@@ -36,3 +36,13 @@
   background-color: var(--text);
   box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.4);
 }
+
+@media (max-width: 375px) {
+  .footerItemContainer {
+    gap: unset !important;
+  }
+  .footerItemContainer svg {
+    width: 15px;
+    height: 15px;
+  }
+}

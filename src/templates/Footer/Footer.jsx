@@ -4,6 +4,7 @@ import { ReactSVG } from "react-svg";
 import linkedin from "../../assets/socials/linkedin.svg";
 import twitter from "../../assets/socials/twitter.svg";
 import github from "../../assets/socials/github.svg";
+import devPost from "../../assets/socials/devPost.svg";
 import { motion } from "framer-motion";
 
 export default function Footer() {
@@ -13,16 +14,21 @@ export default function Footer() {
 
   const linksArr = [
     {
+      logo: github,
+      link: "https://github.com/gcWDev",
+    },
+    {
       logo: linkedin,
       link: "https://www.linkedin.com/in/guy-cohen-96a6141ab/",
     },
+
     {
       logo: twitter,
       link: "https://twitter.com/gcWDev",
     },
     {
-      logo: github,
-      link: "https://github.com/gcWDev",
+      logo: devPost,
+      link: "https://devpost.com/gcWDev?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav",
     },
   ];
 
