@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "./Heading";
 
 export default function Experience(props) {
-  const { experiences, children } = props;
+  const { experiences } = props;
 
   const elementArr = experiences.map((experience, index) => {
     return (

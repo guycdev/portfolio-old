@@ -439,6 +439,10 @@ input:focus {
   font-weight: 300;
 }
 
+.experience span {
+  color: var(--primary);
+}
+
 .random-dots {
   width: 10px;
   height: 10px;
@@ -589,6 +593,22 @@ input:focus {
 @media (max-width: 1060px) {
   .content-container {
     position: relative;
+  }
+}
+
+@media (max-width: 950px) {
+  .date span,
+  .location span {
+    font-size: 0.7rem;
+  }
+  .type {
+    font-size: 1rem;
+  }
+  .subject {
+    font-size: 0.9rem;
+  }
+  .experience {
+    font-size: 0.8rem;
   }
 }
 
