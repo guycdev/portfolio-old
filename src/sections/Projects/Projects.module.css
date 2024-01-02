@@ -1,11 +1,11 @@
 @import "../../index.css";
 
 .projectsContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
 }
 
 /* .projectsContainer > *:nth-child(2)::before {
@@ -28,292 +28,292 @@
 } */
 
 .projectsContainer > * {
-  flex: 1;
+    flex: 1;
 }
 
 .project {
-  transition: all 0.3s;
-  cursor: pointer;
-  width: fit-content;
+    transition: all 0.3s;
+    cursor: pointer;
+    width: fit-content;
 }
 
 .active * {
-  color: var(--primary);
+    color: var(--primary);
 }
 
 .active > h2 > span > span {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .active > .projectHeading > span:first-child > span {
-  font-weight: 500;
-  font-size: 1.375rem;
+    font-weight: 500;
+    font-size: 1.375rem;
 }
 
 .projectHeading > span:first-child {
-  font-size: 1.1rem;
-  margin-right: 0.75rem;
+    font-size: 1.1rem;
+    margin-right: 0.75rem;
 }
 
 .projectHeading > span > span {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .projectHeading > span:first-child > span {
-  color: var(--primary);
-  font-weight: 300;
-  transition: all 0.3s;
+    color: var(--primary);
+    font-weight: 300;
+    transition: all 0.3s;
 }
 
 .projectMenuContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .projectCard > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  overflow: hidden;
-  border-radius: 10px;
-  padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1.2rem;
 }
 
 .projectCard > * {
-  z-index: 2;
+    z-index: 2;
 }
 
 .imgLink {
-  position: relative;
-  transition: all 0.3s;
+    position: relative;
+    transition: all 0.3s;
 }
 
 .projectInfoContainer {
-  position: absolute;
-  padding: 1rem;
-  top: 0px;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  transition: all 0.7s;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 30px;
+    position: absolute;
+    padding: 1rem;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: all 0.7s;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
 }
 .imgLink:hover > .projectInfoContainer {
-  opacity: 1;
+    opacity: 1;
 }
 
 .projectTitle {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .tagContainer {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: repeat(5, auto);
-  gap: 20px;
-  justify-items: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(5, auto);
+    gap: 20px;
+    justify-items: center;
 }
 
 .projectCard .tag {
-  padding: 0.3rem 0.5rem;
-  border-radius: 50px;
-  background-color: var(--primary);
-  color: var(--background);
-  box-shadow: var(--box-shadow);
-  font-size: 0.75rem;
-  font-weight: 700;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50px;
+    background-color: var(--primary);
+    color: var(--background);
+    box-shadow: var(--box-shadow);
+    font-size: 0.75rem;
+    font-weight: 700;
 }
 
 .imgLink:hover img {
-  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.4) 45%, transparent);
-  mask-image: linear-gradient(transparent 75%, black);
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.4) 45%, transparent);
+    mask-image: linear-gradient(transparent 75%);
 }
 
 .imgLink:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .projectCard img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.1);
-  object-fit: cover;
-  aspect-ratio: 3.75/2;
-  object-position: 0% 0%;
-  transition: all 0.3s;
-  border: 2px solid var(--primary);
-  transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.1);
+    object-fit: cover;
+    aspect-ratio: 3.75/2;
+    object-position: 0% 0%;
+    transition: all 0.3s;
+    border: 2px solid var(--primary);
+    transition: all 0.3s;
 }
 
 .projectCard .projectDescription {
-  font-size: 0.9rem;
-  color: var(--primary);
+    font-size: 0.9rem;
+    color: var(--primary);
 }
 
 .projectCard img:hover {
-  box-shadow: 0px 8px 32px rgba(235, 241, 255, 0.6);
-  transform: scale(1.02);
+    box-shadow: 0px 8px 32px rgba(235, 241, 255, 0.6);
+    transform: scale(1.02);
 }
 
 .projectCard p {
-  width: fit-content;
+    width: fit-content;
 }
 
 .linkContainer {
-  display: flex;
-  border: 1px solid var(--background-hue);
-  border-radius: 50px;
+    display: flex;
+    border: 1px solid var(--background-hue);
+    border-radius: 50px;
 }
 .projectCard a {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .linkContainer > a > div {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .linkContainer > a > div {
-  border-radius: 50px;
-  padding: 0.4rem 1rem;
+    border-radius: 50px;
+    padding: 0.4rem 1rem;
 }
 
 .linkContainer > .hovered > div {
-  background-color: var(--text);
-  box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.2);
+    background-color: var(--text);
+    box-shadow: 0px 4px 16px rgba(235, 241, 255, 0.2);
 }
 
 .linkContainer > .hovered svg,
 .linkContainer > .hovered path {
-  fill: var(--background) !important;
+    fill: var(--background) !important;
 }
 
 .projectCard p {
-  font-size: 0.85rem;
-  text-align: center;
+    font-size: 0.85rem;
+    text-align: center;
 }
 
 .projectMenuContainer > a {
-  text-decoration: none;
-  width: fit-content;
+    text-decoration: none;
+    width: fit-content;
 }
 
 .projectInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  background-color: var(--background);
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--background);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
 }
 
 @media (min-width: 1540px) {
-  .imgLink {
-    display: flex;
-    justify-content: center;
-    max-width: 650px;
-  }
+    .imgLink {
+        display: flex;
+        justify-content: center;
+        max-width: 650px;
+    }
 }
 
 @media (min-width: 1300px) {
-  .projectsContainer > div:last-child {
-    max-width: 800px;
-  }
+    .projectsContainer > div:last-child {
+        max-width: 800px;
+    }
 }
 
 @media (max-width: 1060px) {
-  .tagContainer {
-    grid-template-columns: repeat(4, auto);
-    gap: 5px;
-  }
+    .tagContainer {
+        grid-template-columns: repeat(4, auto);
+        gap: 5px;
+    }
 
-  .projectTitle {
-    font-size: 1.3rem;
-  }
+    .projectTitle {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 900px) {
-  .active {
-    font-size: 1.2rem !important;
-  }
-  .project {
-    font-size: 0.8rem;
-  }
+    .active {
+        font-size: 1.2rem !important;
+    }
+    .project {
+        font-size: 0.8rem;
+    }
 }
 
 @media (width<=810px) {
-  .imgLink {
-    pointer-events: none;
-  }
+    .imgLink {
+        pointer-events: none;
+    }
 }
 
 @media (max-width: 760px) {
-  .projectsContainer {
-    flex-direction: column;
-    height: 81vh;
-  }
-  .projectMenuContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-  }
+    .projectsContainer {
+        flex-direction: column;
+        height: 81vh;
+    }
+    .projectMenuContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
 
-  .projectCard > div:first-child {
-    justify-content: space-between;
-    height: 100%;
-  }
+    .projectCard > div:first-child {
+        justify-content: space-between;
+        height: 100%;
+    }
 
-  .projectCard > div:first-child > a {
-    display: flex;
-    justify-content: center;
-  }
+    .projectCard > div:first-child > a {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 550px) {
-  .active {
-    font-size: 1.2rem !important;
-  }
-  .projectMenuContainer > li > a {
-    font-size: 1rem;
-  }
-  .projectCard a {
-    display: flex;
-    justify-content: center;
-  }
+    .active {
+        font-size: 1.2rem !important;
+    }
+    .projectMenuContainer > li > a {
+        font-size: 1rem;
+    }
+    .projectCard a {
+        display: flex;
+        justify-content: center;
+    }
 
-  .imgLink {
-    pointer-events: none;
-  }
+    .imgLink {
+        pointer-events: none;
+    }
 }
 
 @media (max-width: 580px) {
-  .projectMenuContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .projectsContainer {
-    gap: 20px;
-  }
+    .projectMenuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .projectsContainer {
+        gap: 20px;
+    }
 }
 
 @media (max-height: 757px) and (min-width: 1370px) {
-  .projectCard img,
-  .projectInfoContainer {
-    width: 85%;
-    height: 85%;
-  }
+    .projectCard img,
+    .projectInfoContainer {
+        width: 85%;
+        height: 85%;
+    }
 }
