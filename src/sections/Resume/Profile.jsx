@@ -20,8 +20,8 @@ export default function Profile() {
     >
       <div>
         <p className={styles.resumeSubheading}>
-          <span>Entrepreneurial web developer</span> with{" "}
-          <span>$362K in lifetime revenue </span>from multiple ventures.
+          <span>Entrepreneurial web developer</span> currently working as a{" "}
+          <span>SWE</span> at <span>ZeroX Gaming</span>
         </p>
         <p className={styles.resumeSubheading}>
           <span>Proficient in React</span> and Node; pursuing a{" "}
