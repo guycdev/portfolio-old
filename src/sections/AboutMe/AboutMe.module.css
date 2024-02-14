@@ -1,4 +1,4 @@
-@import "../../index.css";
+@import '../../index.css';
 
 .container {
   display: flex;
@@ -154,7 +154,7 @@ pre::-webkit-scrollbar-corner {
 }
 
 .aboutMeContentContainer > p {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .feature,
@@ -322,7 +322,7 @@ video {
   );
   background-size: 300% 300%;
   background-position: 0% 0%;
-  content: "";
+  content: '';
   height: 100%;
   left: 0px;
   position: absolute;
