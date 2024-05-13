@@ -626,10 +626,7 @@ input:focus {
   }
 }
 
-@media (max-width: 700px) {
-  .bullet::before {
-    display: none;
-  }
+@media (max-width: 860px) {
   .bullet {
     text-align: center;
   }

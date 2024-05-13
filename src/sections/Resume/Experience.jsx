@@ -4,9 +4,23 @@ import Experience from "../../components/Experience";
 export default function Experiences() {
   const experiencesArr = [
     {
-      duration: "May 2023 - Present",
+      duration: "Dec 2023 - Present",
+      type: "ZeroX Network",
+      subject: "Software Engineering Intern",
+      experience: "Full stack development",
+      geo: "Vancouver, BC, Canada",
+      bullets: [
+        "Design and implements APIs and UIs for blockchain native products in Node, Django, and React",
+        "Led migraiton of smart contract interactions from client to server",
+        "Spearheaded migration of file upload logic from client to server, reducing server load by 99%",
+        "Automated repo forking process by building Python scripts",
+        "Collaborate with the DevOps team to iterate CI/CD processes for our VC demo monorepo",
+      ],
+    },
+    {
+      duration: "May 2023 - Dec 2023",
       type: "Analog Designs",
-      subject: "Founder",
+      subject: "Freelance Developer",
       experience: "Design Agency",
       geo: "Toronto, On, Canada",
       bullets: [
@@ -34,8 +48,10 @@ export default function Experiences() {
   ];
 
   return (
-    <div className={styles.experienceContainer}>
-      <Experience experiences={experiencesArr} />
+    <div className={styles.experienceSectionContainer}>
+      <div className={styles.experienceContainer}>
+        <Experience experiences={experiencesArr} />
+      </div>
     </div>
   );
 }

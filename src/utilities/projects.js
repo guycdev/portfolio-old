@@ -2,7 +2,6 @@ import analogDesigns from "../assets/projects/analog-designs.png";
 import snkrsSolutions from "../assets/projects/SNKRS-solutions.png";
 import ClassCircless from "../assets/projects/ClassCircless.png";
 import ritComp from "../assets/projects/RIT-comp.png";
-import quizzical from "../assets/projects/quizzical.png";
 import react from "../assets/overlays/react.svg";
 import node from "../assets/overlays/node.svg";
 import python from "../assets/overlays/python.svg";
@@ -14,12 +13,106 @@ import openai from "../assets/tech/openai.svg";
 import mongodb from "../assets/tech/mongodb.svg";
 import selenium from "../assets/tech/selenium.svg";
 import js from "../assets/overlays/js.svg";
+import ts from "../assets/overlays/ts.svg";
 import bootstrap from "../assets/overlays/bootstrap.svg";
 import html from "../assets/tech/html.svg";
-import outbreak from "../assets/projects/outbreak.png";
 import on from "../assets/projects/on.png";
+import beatBytes from "../assets/projects/beatbytes.png";
+import next from "../assets/tech/next.svg";
 
 const projects = [
+  {
+    title: "BeatBytes",
+    subheading: "🏆 2nd place at beaverhack Winter 2024 event 🏆",
+    descriptiveSubheading: "Full-stack audio production platform",
+    links: {
+      github: "https://github.com/Nyumat/beaverhacks",
+      live: "https://beatbytes.vercel.app/",
+    },
+    img: beatBytes,
+    tech: [
+      {
+        logo: ts,
+        name: "Javascript",
+      },
+      {
+        logo: react,
+        name: "React",
+      },
+      {
+        logo: node,
+        name: "NodeJs",
+      },
+      {
+        logo: next,
+        name: "NextJs",
+      },
+    ],
+  },
+  {
+    title: "Outbreak Navigator",
+    subheading: "🏆 1st place at Google Hacks x OSU Fall 2023 event 🏆",
+    descriptiveSubheading:
+      "Full stack crowd-sourced map app to navigate viral outbreaks",
+
+    links: {
+      github: "https://github.com/gcWDev/outbreak-navigator",
+    },
+    img: on,
+    tech: [
+      {
+        logo: js,
+        name: "Javascript",
+      },
+      {
+        logo: react,
+        name: "React",
+      },
+      {
+        logo: node,
+        name: "NodeJs",
+      },
+      {
+        logo: bootstrap,
+        name: "Bootsstrap",
+      },
+      {
+        logo: css,
+        name: "CSS",
+      },
+      {
+        logo: html,
+        name: "HTML",
+      },
+      {
+        logo: mysql,
+        name: "MySql",
+      },
+      {
+        logo: git,
+        name: "Git",
+      },
+      {
+        logo: figma,
+        name: "Figma",
+      },
+    ],
+  },
+  {
+    title: "High Frequency Trading Bot",
+    subheading: "🏆 1st place at TMU high frequency trading competition 🏆",
+    descriptiveSubheading:
+      "Arbitrage trading bot used for the RIT high frequency trading platform",
+    links: {
+      github: "https://github.com/gcWDev/HFT-Case-Comp-case-1-2",
+    },
+    img: ritComp,
+    tech: [
+      { logo: python, name: "Python" },
+      { logo: openai, name: "OpenAI" },
+      { logo: git, name: "Git" },
+    ],
+  },
   {
     title: "Analog Designs",
     subheading: "Full-stack order management website for my design agency",
@@ -87,56 +180,6 @@ const projects = [
     ],
   },
   {
-    title: "Outbreak Navigator",
-    subheading:
-      "Real-time, crowdsourced map app to safely locate essentials and steer clear of danger zones in crises",
-    descriptiveSubheading:
-      "Placed 1st out of 77 participants by utilizing various Google Maps APIs",
-
-    links: {
-      github: "https://github.com/gcWDev/outbreak-navigator",
-    },
-    img: on,
-    tech: [
-      {
-        logo: js,
-        name: "Javascript",
-      },
-      {
-        logo: react,
-        name: "React",
-      },
-      {
-        logo: node,
-        name: "NodeJs",
-      },
-      {
-        logo: bootstrap,
-        name: "Bootsstrap",
-      },
-      {
-        logo: css,
-        name: "CSS",
-      },
-      {
-        logo: html,
-        name: "HTML",
-      },
-      {
-        logo: mysql,
-        name: "MySql",
-      },
-      {
-        logo: git,
-        name: "Git",
-      },
-      {
-        logo: figma,
-        name: "Figma",
-      },
-    ],
-  },
-  {
     title: "ClassCircles",
     subheading:
       "Full-stack hackathon project for students to find intresting student groups",
@@ -184,23 +227,6 @@ const projects = [
         logo: figma,
         name: "Figma",
       },
-    ],
-  },
-  {
-    title: "High Frequency Trading Bot",
-    subheading:
-      "Arbitrage trading bot used for the RIT high frequency trading platform",
-    descriptiveSubheading:
-      "Got 1st place by outperforming 38 participants, achieved a P/L differential of $100K above mean",
-
-    links: {
-      github: "https://github.com/gcWDev/HFT-Case-Comp-case-1-2",
-    },
-    img: ritComp,
-    tech: [
-      { logo: python, name: "Python" },
-      { logo: openai, name: "OpenAI" },
-      { logo: git, name: "Git" },
     ],
   },
   // {

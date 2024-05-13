@@ -22,32 +22,32 @@ export default function Education() {
 
   const involvmentArr = [
     {
+      duration: "Mar 2024",
+      type: "BeatBytes",
+      subject: "🏆 2nd place at beaverhack Winter 2024 event 🏆",
+      experience: "Beaverhacks Winter 2024 Hackathon",
+      geo: "Corvallis, OR, United States",
+    },
+    {
       duration: "Nov 2023",
-      type: "Google Hacks x OSU Hackathon",
-      subject: "Full stack crowdsourcing survival map",
-      experience: "Oregon State University",
+      type: "Outbreak Navigator",
+      subject: "🏆 1st place at Google Hacks x OSU Fall 2023 event 🏆",
+      experience: "Google Hacks x OSU Hackathon Fall 2023",
       geo: "Corvallis, OR, United States",
     },
     {
       duration: "Oct 2023",
-      type: "Oregon State Hackathon",
+      type: "Beaverhacks Fall 2023 Hackathon",
       subject: "Full stack student group finder",
-      experience: "Oregon State University",
+      experience: "Beaverhacks Fall 2023 Hackathon",
       geo: "Corvallis, OR, United States",
     },
     {
       duration: "Jan 2023 - Apr 2023",
-      type: "High Frequency Trading Competition",
-      subject: "High frequency AI trading bot",
+      type: "High Frequency Trading Bot",
+      subject: "🏆 1st place at TMU high frequency trading competition 🏆",
       experience: "Ted Rogers School of Management",
       geo: "Toronto, ON, Canada",
-    },
-    {
-      duration: "May 2021 - Aug 2021",
-      type: "SMIF Analyst",
-      subject: "Oversaw the allocation of a $500K portfolio",
-      experience: "Ted Rogers School of Management",
-      geo: "Corvallis, OR, United States",
     },
   ];
 

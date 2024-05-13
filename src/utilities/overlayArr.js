@@ -6,7 +6,8 @@ import git from "../assets/overlays/git.svg";
 import css from "../assets/overlays/css.svg";
 import js from "../assets/overlays/js.svg";
 import bootstrap from "../assets/overlays/bootstrap.svg";
+import ts from "../assets/overlays/ts.svg";
 
-const overlays = [js, react, node, python, mysql, git, bootstrap, css];
+const overlays = [ts, js, react, node, python, mysql, git, bootstrap, css];
 
 export default overlays;
