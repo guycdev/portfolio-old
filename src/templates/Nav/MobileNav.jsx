@@ -51,7 +51,7 @@ export default function MobileNav() {
             svg.classList.add(styles.closeBtn);
           }}
         />
-        <NavItems items={["About Me", "Projects", "Resume", "Get in Touch"]} />
+        <NavItems items={["Projects", "Resume", "Get in Touch"]} />
       </motion.nav>
       <div
         className={styles.navOverlay}
