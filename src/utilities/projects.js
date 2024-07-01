@@ -32,20 +32,16 @@ const projects = [
     img: beatBytes,
     tech: [
       {
-        logo: ts,
-        name: "Javascript",
+        logo: next,
+        name: "NextJs",
       },
       {
-        logo: react,
-        name: "React",
+        logo: ts,
+        name: "Typescript",
       },
       {
         logo: node,
         name: "NodeJs",
-      },
-      {
-        logo: next,
-        name: "NextJs",
       },
     ],
   },
