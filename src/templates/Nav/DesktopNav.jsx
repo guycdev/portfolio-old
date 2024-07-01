@@ -22,7 +22,7 @@ export default function DesktopNav() {
       >
         <Heading content="GC" />
       </NavLink>
-      <NavItems items={["Projects", "Resume", "Get in Touch"]} />
+      <NavItems items={["Resume", "Projects", "Get in Touch"]} />
     </>
   );
 }
