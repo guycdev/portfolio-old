@@ -10,7 +10,7 @@ const featuresArr = [
       "A minion face whose eyes follow mouse positioning using trigonometry",
     video: minions,
     links: [
-      "https://github.com/gcWDev/Analog-Designs/blob/main/frontend/src/pages/NewAuth/AuthHeroCard.jsx",
+      "https://github.com/guycdev/Analog-Designs/blob/main/frontend/src/pages/NewAuth/AuthHeroCard.jsx",
       "http://analogdesigns.net/account",
     ],
     code: `export default function CursorFollower() {
@@ -113,7 +113,7 @@ const featuresArr = [
       "A reusable progress bar component that dynamically fills based on the length of inputs in a form",
     video: progressBar,
     links: [
-      "https://github.com/gcWDev/Analog-Designs/blob/main/frontend/src/components/ProgressBar.jsx",
+      "https://github.com/guycdev/Analog-Designs/blob/main/frontend/src/components/ProgressBar.jsx",
       "http://analogdesigns.net/dashboard/order",
     ],
     code: `export default function ProgressBar(props) {
@@ -187,7 +187,7 @@ const featuresArr = [
       "A video player to showcase previous deployments without loading buffer when video state changes.",
     video: video,
     links: [
-      "https://github.com/gcWDev/Analog-Designs/tree/main/frontend/src/pages/Home/VideoObject",
+      "https://github.com/guycdev/Analog-Designs/tree/main/frontend/src/pages/Home/VideoObject",
       "http://analogdesigns.net/#demos",
     ],
     code: `export default function VideoPlayer(props) {
@@ -274,7 +274,7 @@ const featuresArr = [
       "A chart representing price expense breakdown that animates price changes based on calander state",
     video: total,
     links: [
-      "https://github.com/gcWDev/Analog-Designs/blob/main/frontend/src/pages/Dashboard/DashboardOrder/OrderSummaryChart.jsx",
+      "https://github.com/guycdev/Analog-Designs/blob/main/frontend/src/pages/Dashboard/DashboardOrder/OrderSummaryChart.jsx",
       "http://analogdesigns.net/dashboard/order",
     ],
     code: `export default function Calendar(props) {

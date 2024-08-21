@@ -52,7 +52,7 @@ const projects = [
       "Full stack crowd-sourced map app to navigate viral outbreaks",
 
     links: {
-      github: "https://github.com/gcWDev/outbreak-navigator",
+      github: "https://github.com/guycdev/outbreak-navigator",
     },
     img: on,
     tech: [
@@ -100,7 +100,7 @@ const projects = [
     descriptiveSubheading:
       "Arbitrage trading bot used for the RIT high frequency trading platform",
     links: {
-      github: "https://github.com/gcWDev/HFT-Case-Comp-case-1-2",
+      github: "https://github.com/guycdev/HFT-Case-Comp-case-1-2",
     },
     img: ritComp,
     tech: [
@@ -116,7 +116,7 @@ const projects = [
       "Session based authentication, deployed on AWS with NGINX",
 
     links: {
-      github: "https://github.com/gcWDev/Analog-Designs",
+      github: "https://github.com/guycdev/Analog-Designs",
       live: "http://analogdesigns.net/",
     },
     img: analogDesigns,
@@ -166,7 +166,7 @@ const projects = [
     descriptiveSubheading: "Utilized proxy support to make scripts more robust",
 
     links: {
-      github: "https://github.com/gcWDev/snkrs_solutions_suite",
+      github: "https://github.com/guycdev/snkrs_solutions_suite",
     },
     img: snkrsSolutions,
     tech: [
@@ -182,7 +182,7 @@ const projects = [
     descriptiveSubheading: "Developed in two days",
 
     links: {
-      github: "https://github.com/gcWDev/ClassCircles",
+      github: "https://github.com/guycdev/ClassCircles",
       live: "https://653577550814840008f579f0--papaya-bonbon-e2b35f.netlify.app/",
     },
     img: ClassCircless,
@@ -232,7 +232,7 @@ const projects = [
   //   descriptiveSubheading:
   //     "Implemented dynamic user settings for a personalized quiz experience.",
   //   links: {
-  //     github: "https://github.com/gcWDev/Quizzical",
+  //     github: "https://github.com/guycdev/Quizzical",
   //     live: "https://dancing-douhua-4d4ac1.netlify.app/",
   //   },
   //   img: quizzical,

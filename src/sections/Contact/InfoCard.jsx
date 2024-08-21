@@ -51,7 +51,7 @@ export default function InfoCard() {
       <div className={styles.socialsContainer}>
         <motion.a
           className="react-svg"
-          href="https://github.com/gcWDev"
+          href="https://github.com/guycdev"
           target="_blank"
           initial={{
             opacity: 0,
@@ -67,7 +67,7 @@ export default function InfoCard() {
         </motion.a>
         <motion.a
           className="react-svg"
-          href="https://twitter.com/gcWDev"
+          href="https://twitter.com/guycdev"
           target="_blank"
           initial={{
             opacity: 0,

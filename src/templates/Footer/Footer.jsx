@@ -15,7 +15,7 @@ export default function Footer() {
   const linksArr = [
     {
       logo: github,
-      link: "https://github.com/gcWDev",
+      link: "https://github.com/guycdev",
     },
     {
       logo: linkedin,
@@ -24,11 +24,11 @@ export default function Footer() {
 
     {
       logo: twitter,
-      link: "https://twitter.com/gcWDev",
+      link: "https://twitter.com/guycdev",
     },
     {
       logo: devPost,
-      link: "https://devpost.com/gcWDev?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav",
+      link: "https://devpost.com/guycdev?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav",
     },
   ];
 
