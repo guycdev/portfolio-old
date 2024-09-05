@@ -1,20 +1,69 @@
 import React from "react";
 import styles from "./Resume.module.css";
 import Experience from "../../components/Experience";
+import { FaAws, FaNode, FaPython, FaReact, FaShopify } from "react-icons/fa";
+import { SiSelenium, SiTypescript } from "react-icons/si";
+import { TbFileTypeSql } from "react-icons/tb";
 export default function Experiences() {
   const experiencesArr = [
     {
-      duration: "Dec 2023 - Present",
+      duration: "Sept 2024 - Present",
+      type: "ZeroX Network",
+      subject: "Software Engineer",
+      experience: "Full stack development",
+      geo: "Vancouver, BC, Canada",
+      bullets: [],
+      tech: [
+        {
+          icon: SiTypescript,
+          label: "Typescript",
+        },
+        {
+          icon: FaReact,
+          label: "React",
+        },
+        {
+          icon: FaNode,
+          label: "Node.js",
+        },
+        {
+          icon: FaPython,
+          label: "Python",
+        },
+        {
+          icon: FaAws,
+          label: "AWS",
+        },
+      ],
+    },
+    {
+      duration: "Jan 2024 - Aug 2024",
       type: "ZeroX Network",
       subject: "Software Engineering Intern",
       experience: "Full stack development",
       geo: "Vancouver, BC, Canada",
-      bullets: [
-        "Design and implements APIs and UIs for blockchain native products in Node, Django, and React",
-        "Led migraiton of smart contract interactions from client to server",
-        "Spearheaded migration of file upload logic from client to server, reducing server load by 99%",
-        "Automated repo forking process by building Python scripts",
-        "Collaborate with the DevOps team to iterate CI/CD processes for our VC demo monorepo",
+      bullets: [],
+      tech: [
+        {
+          icon: SiTypescript,
+          label: "Typescript",
+        },
+        {
+          icon: FaReact,
+          label: "React",
+        },
+        {
+          icon: FaNode,
+          label: "Node.js",
+        },
+        {
+          icon: FaPython,
+          label: "Python",
+        },
+        {
+          icon: FaAws,
+          label: "AWS",
+        },
       ],
     },
     {
@@ -23,12 +72,24 @@ export default function Experiences() {
       subject: "Freelance Developer",
       experience: "Design Agency",
       geo: "Toronto, On, Canada",
-      bullets: [
-        "Launched React website with user-friendly dashboard.",
-        "Engineered a CRUD Node API, reducing communication time by 80%.",
-        "Designed modular UI for easy theme swaps for future projects.",
-        "Learned about db security, and responsive design.",
-        "Managed 6 projects to date.",
+      bullets: [],
+      tech: [
+        {
+          icon: FaReact,
+          label: "React",
+        },
+        {
+          icon: FaNode,
+          label: "Node.js",
+        },
+        {
+          icon: TbFileTypeSql,
+          label: "SQL",
+        },
+        {
+          icon: FaShopify,
+          label: "Shopify",
+        },
       ],
     },
     {
@@ -37,21 +98,23 @@ export default function Experiences() {
       subject: "Founder",
       experience: "Retail Arbitrage",
       geo: "Toronto, ON, Canada",
-      bullets: [
-        "Utilized Python and Selenium for e-commerce automation.",
-        "Crafted Excel dashboard for real-time inventory tracking.",
-        "Boosted brand via diverse social media channels.",
-        "Established long-term relationships with wholesale and D2C clients",
-        "Led the business to profitability",
+      bullets: [],
+      tech: [
+        {
+          icon: FaPython,
+          label: "Python",
+        },
+        {
+          icon: SiSelenium,
+          label: "Selenium",
+        },
       ],
     },
   ];
 
   return (
     <div className={styles.experienceSectionContainer}>
-      <div className={styles.experienceContainer}>
-        <Experience experiences={experiencesArr} />
-      </div>
+      <Experience experiences={experiencesArr} />
     </div>
   );
 }

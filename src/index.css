@@ -347,6 +347,17 @@ button {
   fill: var(--accent);
 }
 
+.icon-container {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
 .resume-marquee {
   position: relative;
   overflow: visible;

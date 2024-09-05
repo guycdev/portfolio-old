@@ -1,24 +1,21 @@
 import analogDesigns from "../assets/projects/analog-designs.png";
-import snkrsSolutions from "../assets/projects/SNKRS-solutions.png";
 import ClassCircless from "../assets/projects/ClassCircless.png";
 import ritComp from "../assets/projects/RIT-comp.png";
-import react from "../assets/overlays/react.svg";
-import node from "../assets/overlays/node.svg";
-import python from "../assets/overlays/python.svg";
-import mysql from "../assets/overlays/mysql.svg";
-import git from "../assets/overlays/git.svg";
-import css from "../assets/overlays/css.svg";
-import figma from "../assets/overlays/figma.svg";
-import openai from "../assets/tech/openai.svg";
-import mongodb from "../assets/tech/mongodb.svg";
-import selenium from "../assets/tech/selenium.svg";
-import js from "../assets/overlays/js.svg";
-import ts from "../assets/overlays/ts.svg";
-import bootstrap from "../assets/overlays/bootstrap.svg";
-import html from "../assets/tech/html.svg";
 import on from "../assets/projects/on.png";
 import beatBytes from "../assets/projects/beatbytes.png";
-import next from "../assets/tech/next.svg";
+import { SiNextdotjs, SiTypescript } from "react-icons/si";
+import {
+  FaBootstrap,
+  FaCss3,
+  FaHtml5,
+  FaNode,
+  FaPython,
+  FaReact,
+} from "react-icons/fa";
+import { DiJavascript, DiMongodb } from "react-icons/di";
+import { TbSql } from "react-icons/tb";
+import { FiFigma } from "react-icons/fi";
+import { PiOpenAiLogo } from "react-icons/pi";
 
 const projects = [
   {
@@ -32,15 +29,15 @@ const projects = [
     img: beatBytes,
     tech: [
       {
-        logo: next,
+        logo: SiNextdotjs,
         name: "NextJs",
       },
       {
-        logo: ts,
+        logo: SiTypescript,
         name: "Typescript",
       },
       {
-        logo: node,
+        logo: FaNode,
         name: "NodeJs",
       },
     ],
@@ -57,39 +54,27 @@ const projects = [
     img: on,
     tech: [
       {
-        logo: js,
+        logo: DiJavascript,
         name: "Javascript",
       },
       {
-        logo: react,
+        logo: FaReact,
         name: "React",
       },
       {
-        logo: node,
+        logo: FaNode,
         name: "NodeJs",
       },
       {
-        logo: bootstrap,
+        logo: FaBootstrap,
         name: "Bootsstrap",
       },
       {
-        logo: css,
-        name: "CSS",
-      },
-      {
-        logo: html,
-        name: "HTML",
-      },
-      {
-        logo: mysql,
+        logo: TbSql,
         name: "MySql",
       },
       {
-        logo: git,
-        name: "Git",
-      },
-      {
-        logo: figma,
+        logo: FiFigma,
         name: "Figma",
       },
     ],
@@ -104,9 +89,8 @@ const projects = [
     },
     img: ritComp,
     tech: [
-      { logo: python, name: "Python" },
-      { logo: openai, name: "OpenAI" },
-      { logo: git, name: "Git" },
+      { logo: FaPython, name: "Python" },
+      { logo: PiOpenAiLogo, name: "OpenAI" },
     ],
   },
   {
@@ -122,57 +106,25 @@ const projects = [
     img: analogDesigns,
     tech: [
       {
-        logo: js,
+        logo: DiJavascript,
         name: "Javascript",
       },
       {
-        logo: react,
+        logo: FaReact,
         name: "React",
       },
       {
-        logo: node,
+        logo: FaNode,
         name: "NodeJs",
       },
       {
-        logo: bootstrap,
-        name: "Bootsstrap",
-      },
-      {
-        logo: css,
-        name: "CSS",
-      },
-      {
-        logo: html,
-        name: "HTML",
-      },
-      {
-        logo: mysql,
+        logo: TbSql,
         name: "MySql",
       },
       {
-        logo: git,
-        name: "Git",
-      },
-      {
-        logo: figma,
+        logo: FiFigma,
         name: "Figma",
       },
-    ],
-  },
-  {
-    title: "SNKRS Solutions",
-    subheading:
-      "Suite of web scrapers / automation pool used for retail arbitrage",
-    descriptiveSubheading: "Utilized proxy support to make scripts more robust",
-
-    links: {
-      github: "https://github.com/guycdev/snkrs_solutions_suite",
-    },
-    img: snkrsSolutions,
-    tech: [
-      { logo: python, name: "Python" },
-      { logo: selenium, name: "Selenium" },
-      { logo: css, name: "CSS" },
     ],
   },
   {
@@ -188,39 +140,27 @@ const projects = [
     img: ClassCircless,
     tech: [
       {
-        logo: js,
+        logo: DiJavascript,
         name: "Javascript",
       },
       {
-        logo: react,
+        logo: FaReact,
         name: "React",
       },
       {
-        logo: node,
+        logo: FaNode,
         name: "NodeJs",
       },
       {
-        logo: bootstrap,
+        logo: FaBootstrap,
         name: "Bootsstrap",
       },
       {
-        logo: css,
-        name: "CSS",
-      },
-      {
-        logo: html,
-        name: "HTML",
-      },
-      {
-        logo: mongodb,
+        logo: DiMongodb,
         name: "MongoDB",
       },
       {
-        logo: git,
-        name: "Git",
-      },
-      {
-        logo: figma,
+        logo: FiFigma,
         name: "Figma",
       },
     ],
