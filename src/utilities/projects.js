@@ -135,7 +135,6 @@ const projects = [
 
     links: {
       github: "https://github.com/guycdev/ClassCircles",
-      live: "https://653577550814840008f579f0--papaya-bonbon-e2b35f.netlify.app/",
     },
     img: ClassCircless,
     tech: [
