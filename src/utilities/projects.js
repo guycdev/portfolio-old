@@ -101,7 +101,7 @@ const projects = [
 
     links: {
       github: "https://github.com/guycdev/Analog-Designs",
-      live: "http://analogdesigns.net/",
+      live: "https://main--cute-dusk-5f4e4c.netlify.app/",
     },
     img: analogDesigns,
     tech: [
