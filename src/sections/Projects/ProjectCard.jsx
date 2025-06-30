@@ -3,6 +3,7 @@ import styles from "./Projects.module.css";
 import { ReactSVG } from "react-svg";
 import github from "../../assets/socials/github.svg";
 import globe from "../../assets/globe.svg";
+import paper from "../../assets/socials/paper.svg";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
@@ -72,16 +73,30 @@ export default function ProjectCard(props) {
             </div>
           )}
           <div className={styles.linkContainer}>
-            <a
-              href={project.links.github}
-              target="_blank"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseExit}
-            >
-              <div className="react-svg">
-                <ReactSVG src={github} />
-              </div>
-            </a>
+            {project.links.paper && (
+              <a
+                href={project.links.paper}
+                target="_blank"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseExit}
+              >
+                <div className="react-svg" style={{ fill: "white" }}>
+                  <ReactSVG src={paper} />
+                </div>
+              </a>
+            )}
+            {project.links.github && (
+              <a
+                href={project.links.github}
+                target="_blank"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseExit}
+              >
+                <div className="react-svg">
+                  <ReactSVG src={github} />
+                </div>
+              </a>
+            )}
             {project.links.live && (
               <a
                 href={project.links.live}

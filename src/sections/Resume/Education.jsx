@@ -22,6 +22,13 @@ export default function Education() {
 
   const involvmentArr = [
     {
+      duration: "Sept 2024 - Dec 2024",
+      type: "Radiant AI",
+      subject: "🏆 Published & Funded AI PhD Research Project 🏆",
+      experience: "Ramsey Labs OSU",
+      geo: "Corvallis, OR, United States",
+    },
+    {
       duration: "Mar 2024",
       type: "BeatBytes",
       subject: "🏆 2nd place at beaverhack Winter 2024 event 🏆",
@@ -33,13 +40,6 @@ export default function Education() {
       type: "Outbreak Navigator",
       subject: "🏆 1st place at Google Hacks x OSU Fall 2023 event 🏆",
       experience: "Google Hacks x OSU Hackathon Fall 2023",
-      geo: "Corvallis, OR, United States",
-    },
-    {
-      duration: "Oct 2023",
-      type: "Beaverhacks Fall 2023 Hackathon",
-      subject: "Full stack student group finder",
-      experience: "Beaverhacks Fall 2023 Hackathon",
       geo: "Corvallis, OR, United States",
     },
     {

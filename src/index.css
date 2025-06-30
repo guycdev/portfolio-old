@@ -380,6 +380,11 @@ button {
   margin: 0rem 1rem !important;
 }
 
+.react-svg {
+  display: flex;
+  align-items: center;
+}
+
 .marquee-item {
   position: relative;
   overflow: visible;
