@@ -31,9 +31,9 @@ export default function Profile() {
             AI-powered rare disease diagnosis
           </a>{" "}
           at <span>Oregon State University</span>. Graduated{" "}
-          <span>Computer Science</span> with a <span>4.0 GPA</span> and built
-          ventures generating <span>$350K+</span> in revenue. I'm passionate
-          about all things software engineering, and{" "}
+          <span>Computer Science</span> with a <span>4.0 GPA</span> and{" "}
+          <span>multiple</span> entrepreneurial ventrues. I'm passionate about
+          all things software engineering, and{" "}
           <span>always open to new ideas</span>.
         </p>
         {/* <p className={styles.resumeSubheading}>
