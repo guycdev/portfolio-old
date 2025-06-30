@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from './Hero.module.css';
-import Heading from '../../components/Heading';
-import Button from '../../components/Button';
-import Typewriter from 'typewriter-effect';
-import { motion, spring } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styles from "./Hero.module.css";
+import Heading from "../../components/Heading";
+import Button from "../../components/Button";
+import Typewriter from "typewriter-effect";
+import { motion, spring } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function HeroCta() {
   return (
@@ -27,7 +27,7 @@ export default function HeroCta() {
       >
         <Typewriter
           options={{
-            strings: ['Frontend', 'Backend', 'UX/UI'],
+            strings: ["Frontend", "Backend", "UX/UI", "Data", "Infrastructure"],
             autoStart: true,
             loop: true,
             pauseFor: 1000,
@@ -36,7 +36,7 @@ export default function HeroCta() {
         Developer
       </motion.h3>
       <p>
-        <Heading content="A passionate web developer, designer, learner." />
+        <Heading content="Always open to trying new things" />
       </p>
       <div className={styles.btnContainer}>
         <Link to="get-in-touch">
