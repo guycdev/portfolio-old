@@ -12,6 +12,10 @@ import tb from "../assets/tech/tb.svg";
 import vite from "../assets/tech/vite.svg";
 import html from "../assets/tech/html.svg";
 import ts from "../assets/overlays/ts.svg";
+import go from "../assets/tech/go.svg";
+import duck from "../assets/tech/duckdb.svg";
+import sql from "../assets/tech/sql.svg";
+import mongo from "../assets/tech/mongo.svg";
 import aws from "../assets/overlays/aws.svg";
 import bootstrap from "../assets/overlays/bootstrap.svg";
 import express from "../assets/overlays/express.svg";
@@ -21,9 +25,11 @@ import next from "../assets/overlays/next.svg";
 export const langArr = [
   { logo: ts, link: "https://www.ecma-international.org/" },
   { logo: python, link: "https://www.python.org/" },
-  { logo: mysql, link: "https://www.mysql.com/" },
+  { logo: sql, link: "https://www.mysql.com/" },
   { logo: css, link: "https://www.w3.org/Style/CSS/" },
   { logo: html, link: "https://dev.w3.org/html5/spec-LC/" },
+  { logo: go, link: "https://go.dev/" },
+  { logo: mongo, link: "https://www.mongodb.com/" },
 ];
 
 export const frameArr = [
@@ -32,6 +38,7 @@ export const frameArr = [
   { logo: express, link: "https://expressjs.com/" },
   { logo: next, link: "https://nextjs.org/" },
   { logo: selenium, link: "https://www.selenium.dev/" },
+  { logo: duck, link: "https://duckdb.org/" },
   { logo: bootstrap, link: "https://getbootstrap.com/" },
   { logo: tailwind, link: "https://tailwindcss.com/" },
 ];
