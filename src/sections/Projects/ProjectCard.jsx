@@ -18,6 +18,13 @@ export default function ProjectCard(props) {
     e.currentTarget.classList.remove(styles.hovered);
   }
 
+  function handleClick(e) {
+    const href = e.currentTarget.href;
+    if (href === "javascript:void(0)") {
+      e.preventDefault();
+    }
+  }
+
   const projectCardArr = projects.map((project, index) => {
     const isActive = selectedProject == index;
 
@@ -29,9 +36,20 @@ export default function ProjectCard(props) {
         }}
       >
         <a
-          href={project.links.live || project.links.github}
+          href={
+            project.links
+              ? project.links.live || project.links.github
+              : "javascript:void(0)"
+          }
           target="_blank"
           className={styles.imgLink}
+          onClick={handleClick}
+          style={{
+            cursor:
+              project.links && (project.links.live || project.links.github)
+                ? "pointer"
+                : "default",
+          }}
         >
           <img src={project.img} alt={project.title} />
           <div className={styles.projectInfoContainer}>
@@ -72,44 +90,46 @@ export default function ProjectCard(props) {
               </Marquee>
             </div>
           )}
-          <div className={styles.linkContainer}>
-            {project.links.paper && (
-              <a
-                href={project.links.paper}
-                target="_blank"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseExit}
-              >
-                <div className="react-svg" style={{ fill: "white" }}>
-                  <ReactSVG src={paper} />
-                </div>
-              </a>
-            )}
-            {project.links.github && (
-              <a
-                href={project.links.github}
-                target="_blank"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseExit}
-              >
-                <div className="react-svg">
-                  <ReactSVG src={github} />
-                </div>
-              </a>
-            )}
-            {project.links.live && (
-              <a
-                href={project.links.live}
-                target="_blank"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseExit}
-              >
-                <div className="react-svg">
-                  <ReactSVG src={globe} />
-                </div>
-              </a>
-            )}
-          </div>
+          {project.links && (
+            <div className={styles.linkContainer}>
+              {project.links.paper && (
+                <a
+                  href={project.links.paper}
+                  target="_blank"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseExit}
+                >
+                  <div className="react-svg" style={{ fill: "white" }}>
+                    <ReactSVG src={paper} />
+                  </div>
+                </a>
+              )}
+              {project.links.github && (
+                <a
+                  href={project.links.github}
+                  target="_blank"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseExit}
+                >
+                  <div className="react-svg">
+                    <ReactSVG src={github} />
+                  </div>
+                </a>
+              )}
+              {project.links && project.links.live && (
+                <a
+                  href={project.links.live}
+                  target="_blank"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseExit}
+                >
+                  <div className="react-svg">
+                    <ReactSVG src={globe} />
+                  </div>
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </div>
     );

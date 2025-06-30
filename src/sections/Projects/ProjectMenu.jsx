@@ -10,10 +10,22 @@ export default function ProjectMenu(props) {
     setSelectedProject(id);
   }
 
+  function handleClick(e) {
+    const href = e.currentTarget.href;
+    if (href === "javascript:void(0)") {
+      e.preventDefault();
+    }
+  }
+
   const projectsArr = projects.map((project, index) => {
     const isActive = selectedProject == index;
     return (
-      <a href={project.links.live} key={index} target="_blank">
+      <a
+        href={project.links ? project.links.live : "javascript:void(0)"}
+        key={index}
+        target="_blank"
+        onClick={handleClick}
+      >
         <div
           id={index}
           className={`${styles.project} ${isActive ? styles.active : ""}`}

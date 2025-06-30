@@ -52,10 +52,6 @@ const projects = [
     subheading: "🏥 Commercial EEG AI Model for BEL Company 🏥",
     descriptiveSubheading:
       "Developed CNN-based EEG event detection model for hospital-grade EEG hardware integration",
-    links: {
-      live: "https://radiant.rtx.ai/",
-      paper: "https://link.springer.com/chapter/10.1007/978-3-031-95841-0_35",
-    },
     img: eeg,
     tech: [
       {
